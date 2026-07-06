@@ -115,20 +115,20 @@ export function Contact() {
                   LinkedIn
                 </a>
                 <a
+                  href={personalInfo.gitlab}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-full border border-orange-500/30 bg-orange-500/10 px-5 py-2.5 text-sm font-medium text-orange-200 transition-all hover:border-orange-500/50"
+                >
+                  GitLab
+                </a>
+                <a
                   href={personalInfo.github}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="rounded-full border border-white/10 bg-white/5 px-5 py-2.5 text-sm font-medium text-white transition-all hover:border-violet-500/50"
                 >
                   GitHub
-                </a>
-                <a
-                  href={personalInfo.gitlab}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="rounded-full border border-white/10 bg-white/5 px-5 py-2.5 text-sm font-medium text-white transition-all hover:border-orange-500/50"
-                >
-                  GitLab
                 </a>
                 <a
                   href={personalInfo.cvUrl}
@@ -149,7 +149,7 @@ export function Contact() {
 
               <div className="space-y-3">
                 <p className="text-sm font-semibold uppercase tracking-wider text-zinc-500">
-                  Code & profiles
+                  GitLab & profiles
                 </p>
                 {codeProfiles.map((profile) => (
                   <a
@@ -157,7 +157,11 @@ export function Contact() {
                     href={profile.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="block rounded-xl border border-white/10 bg-white/[0.02] p-4 transition-colors hover:border-white/20"
+                    className={`block rounded-xl border p-4 transition-colors ${
+                      "primary" in profile && profile.primary
+                        ? "border-orange-500/25 bg-orange-500/5 hover:border-orange-500/40"
+                        : "border-white/10 bg-white/[0.02] hover:border-white/20"
+                    }`}
                   >
                     <div className="flex items-center justify-between">
                       <p className="font-semibold text-white">{profile.platform}</p>

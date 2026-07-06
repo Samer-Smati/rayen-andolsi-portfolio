@@ -16,7 +16,7 @@ const dmSans = DM_Sans({
 });
 
 const siteUrl =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://samer-portfolio.vercel.app";
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://portf-nine-eta.vercel.app";
 
 export const metadata: Metadata = {
   title: "Samer Smati — Full-Stack Developer",

@@ -134,20 +134,20 @@ export function Hero() {
               LinkedIn
             </a>
             <a
+              href={personalInfo.gitlab}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm text-orange-400/80 transition-colors hover:text-orange-300"
+            >
+              GitLab
+            </a>
+            <a
               href={personalInfo.github}
               target="_blank"
               rel="noopener noreferrer"
               className="text-sm text-zinc-500 transition-colors hover:text-white"
             >
               GitHub
-            </a>
-            <a
-              href={personalInfo.gitlab}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-sm text-zinc-500 transition-colors hover:text-white"
-            >
-              GitLab
             </a>
             <a
               href={personalInfo.whatsapp}

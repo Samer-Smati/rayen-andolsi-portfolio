@@ -14,7 +14,7 @@ export const personalInfo = {
   profileImage: "/images/samer-profile.jpg",
   profileImageAbout: "/images/samer-profile-about.jpg",
   portfolioUrl:
-    process.env.NEXT_PUBLIC_SITE_URL ?? "https://samer-portfolio.vercel.app",
+    process.env.NEXT_PUBLIC_SITE_URL ?? "https://portf-nine-eta.vercel.app",
   availability:
     "Full-Stack Developer · GCC & MENA production experience",
   recruiterPitch:
@@ -508,11 +508,39 @@ export const pinnedRepos = [
   },
 ];
 
+export const gitlabActivity = {
+  summary:
+    "Most of my recent production work lives on GitLab — full-stack Angular and Node.js apps with daily commits, feature branches, and code review. Enterprise projects are private; open learning repos and capstones are listed below.",
+  stats: [
+    {
+      value: "Daily",
+      label: "Production commits",
+      detail: "Feature branches & merge requests on GitLab",
+    },
+    {
+      value: "20+",
+      label: "GitLab projects",
+      detail: "Capstones, checkpoints & professional repos",
+    },
+    {
+      value: "Angular",
+      label: "& Node.js stack",
+      detail: "Enterprise dashboards, APIs & modules",
+    },
+    {
+      value: "2022+",
+      label: "Active since",
+      detail: "Consistent contribution graph on GitLab",
+    },
+  ],
+};
+
 export const navLinks = [
   { href: "#about", label: "About" },
   { href: "#impact", label: "Impact" },
   { href: "#projects", label: "Projects" },
   { href: "#experience", label: "Experience" },
   { href: "#skills", label: "Skills" },
+  { href: "#gitlab", label: "GitLab" },
   { href: "#contact", label: "Contact" },
 ];

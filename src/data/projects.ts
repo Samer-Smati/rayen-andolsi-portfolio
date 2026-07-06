@@ -177,32 +177,68 @@ export const featuredProjects: FeaturedProject[] = [
     links: [
       {
         label: "Live Site",
-        url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://samer-portfolio.vercel.app",
+        url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://portf-nine-eta.vercel.app",
       },
       {
         label: "GitHub",
-        url: "https://github.com/Samer-Smati",
+        url: "https://github.com/Samer-Smati/portf",
       },
     ],
   },
 ];
 
+export const gitlabPublicProjects = [
+  {
+    name: "ERP Capstone — GOMYCODE",
+    type: "Capstone",
+    description:
+      "Full-stack ERP system — inventory, users, and business modules built with the MERN stack.",
+    stack: "React · Node.js · MongoDB · Express",
+    url: "https://gitlab.com/Smati_Samer",
+  },
+  {
+    name: "React / Node Checkpoints",
+    type: "Learning",
+    description:
+      "Structured GitLab checkpoints covering React components, Node APIs, and full-stack patterns.",
+    stack: "React · Node.js · TypeScript",
+    url: "https://gitlab.com/Smati_Samer",
+  },
+  {
+    name: "Professional Angular & Node",
+    type: "Production",
+    description:
+      "Enterprise web apps — Angular dashboards, REST APIs, and feature delivery via GitLab CI/CD (private repos).",
+    stack: "Angular · Node.js · GitLab CI",
+    url: "https://gitlab.com/Smati_Samer",
+  },
+  {
+    name: "All GitLab repositories",
+    type: "Profile",
+    description:
+      "Browse my full GitLab profile — 20+ projects including capstones, checkpoints, and active professional work.",
+    stack: "gitlab.com/Smati_Samer",
+    url: "https://gitlab.com/Smati_Samer",
+  },
+];
+
 export const codeProfiles = [
+  {
+    platform: "GitLab",
+    username: "Smati_Samer",
+    url: "https://gitlab.com/Smati_Samer",
+    stats: "Daily commits · 20+ projects",
+    description:
+      "Primary platform for production Angular & Node.js work — feature branches, merge requests, and enterprise delivery",
+    primary: true,
+  },
   {
     platform: "GitHub",
     username: "Samer-Smati",
     url: "https://github.com/Samer-Smati",
     stats: "60+ repositories · 7 followers",
     description:
-      "Production experiments, Docker projects, .NET backends, and MERN capstones",
-  },
-  {
-    platform: "GitLab",
-    username: "Smati_Samer",
-    url: "https://gitlab.com/Smati_Samer",
-    stats: "20+ projects",
-    description:
-      "React/Node checkpoints, ERP capstone, and imported learning projects — active since 2022",
+      "Open-source experiments — Docker, .NET backends, MERN capstones, and portfolio source code",
   },
   {
     platform: "LinkedIn",

@@ -9,9 +9,9 @@ export function GitHubShowcase() {
     <section id="github" className="px-6 py-24 md:py-20">
       <div className="mx-auto max-w-6xl">
         <SectionHeading
-          label="Code"
-          title="Pinned Repositories"
-          description="Curated open-source work — production experiments, Docker, .NET, and full-stack capstones."
+          label="Open Source"
+          title="GitHub Highlights"
+          description="Public repos recruiters can review — Docker, .NET, MERN capstones. Daily production work is on GitLab above."
         />
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {pinnedRepos.map((repo, index) => (
