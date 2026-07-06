@@ -17,9 +17,9 @@ export function SectionHeading({
     <div className="mb-12 md:mb-16">
       <motion.p
         className="mb-3 text-sm font-semibold uppercase tracking-[0.3em] text-violet-400"
-        initial={{ opacity: 0, x: -20 }}
+        initial={{ opacity: 0, x: -16 }}
         whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ once: true }}
+        viewport={{ once: true, amount: 0.5 }}
         transition={{ duration: 0.5 }}
       >
         {label}
@@ -28,8 +28,8 @@ export function SectionHeading({
         className="text-3xl font-bold tracking-tight text-white md:text-5xl"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.6, delay: 0.1 }}
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{ duration: 0.6, delay: 0.08 }}
       >
         <span className="bg-gradient-to-r from-violet-400 via-cyan-400 to-orange-400 bg-clip-text text-transparent">
           {title}
@@ -38,10 +38,10 @@ export function SectionHeading({
       {description ? (
         <motion.p
           className="mt-4 max-w-2xl text-base text-zinc-400 md:text-lg"
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.2 }}
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 0.6, delay: 0.16 }}
         >
           {description}
         </motion.p>

@@ -1,6 +1,7 @@
 "use client";
 
 import { personalInfo } from "@/data/cv";
+import { codeProfiles } from "@/data/projects";
 import { contactSchema, type ContactFormData } from "@/lib/validations";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { SectionHeading } from "@/components/ui/SectionHeading";
@@ -57,59 +58,114 @@ export function Contact() {
         <SectionHeading
           label="Contact"
           title="Let's Connect"
-          description="Have a project in mind or want to discuss an opportunity? Reach out."
+          description="Have a project or role in mind? Reach out — I typically respond within 24 hours."
         />
 
         <div className="grid gap-10 lg:grid-cols-2">
           <ScrollReveal>
-            <div className="space-y-8">
-              <div>
-                <p className="mb-2 text-sm font-semibold uppercase tracking-wider text-zinc-500">
-                  Email
+            <div className="space-y-6">
+              <div className="rounded-2xl border border-violet-500/20 bg-violet-500/5 p-6">
+                <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-violet-400">
+                  Direct contact
                 </p>
                 <a
-                  href={`mailto:${personalInfo.email}`}
-                  className="text-xl font-medium text-white transition-colors hover:text-violet-400"
+                  href={`tel:${personalInfo.phone.replace(/\s/g, "")}`}
+                  className="block text-2xl font-bold text-white transition-colors hover:text-violet-300"
+                >
+                  {personalInfo.phone}
+                </a>
+                <a
+                  href={personalInfo.whatsapp}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-2 block text-base text-emerald-400 transition-colors hover:text-emerald-300"
+                >
+                  WhatsApp →
+                </a>
+                <a
+                  href={`mailto:${personalInfo.email}?subject=Hello%20-%20Samer%20Smati`}
+                  className="mt-1 block text-base text-zinc-400 transition-colors hover:text-white"
                 >
                   {personalInfo.email}
                 </a>
               </div>
-              <div>
-                <p className="mb-2 text-sm font-semibold uppercase tracking-wider text-zinc-500">
-                  Phone
-                </p>
-                <a
-                  href={`tel:${personalInfo.phone.replace(/\s/g, "")}`}
-                  className="text-xl font-medium text-white transition-colors hover:text-violet-400"
-                >
-                  {personalInfo.phone}
-                </a>
+
+              <div className="grid gap-3 sm:grid-cols-2">
+                <div className="rounded-xl border border-white/10 bg-white/[0.02] p-4">
+                  <p className="text-xs text-zinc-500">Based in</p>
+                  <p className="mt-1 font-semibold text-white">
+                    {personalInfo.location}
+                  </p>
+                </div>
+                <div className="rounded-xl border border-white/10 bg-white/[0.02] p-4">
+                  <p className="text-xs text-zinc-500">GCC experience</p>
+                  <p className="mt-1 font-semibold text-white">
+                    Full-Stack Developer · ArabyAds, Dubai
+                  </p>
+                </div>
               </div>
-              <div>
-                <p className="mb-2 text-sm font-semibold uppercase tracking-wider text-zinc-500">
-                  Location
-                </p>
-                <p className="text-xl font-medium text-white">
-                  {personalInfo.location}
-                </p>
-              </div>
-              <div className="flex gap-4">
-                <a
-                  href={personalInfo.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="rounded-full border border-white/10 bg-white/5 px-6 py-3 text-sm font-medium text-white transition-all hover:border-violet-500/50 hover:bg-violet-500/10"
-                >
-                  GitHub
-                </a>
+
+              <div className="flex flex-wrap gap-3">
                 <a
                   href={personalInfo.linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="rounded-full border border-white/10 bg-white/5 px-6 py-3 text-sm font-medium text-white transition-all hover:border-cyan-500/50 hover:bg-cyan-500/10"
+                  className="rounded-full border border-white/10 bg-white/5 px-5 py-2.5 text-sm font-medium text-white transition-all hover:border-cyan-500/50"
                 >
                   LinkedIn
                 </a>
+                <a
+                  href={personalInfo.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-full border border-white/10 bg-white/5 px-5 py-2.5 text-sm font-medium text-white transition-all hover:border-violet-500/50"
+                >
+                  GitHub
+                </a>
+                <a
+                  href={personalInfo.gitlab}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-full border border-white/10 bg-white/5 px-5 py-2.5 text-sm font-medium text-white transition-all hover:border-orange-500/50"
+                >
+                  GitLab
+                </a>
+                <a
+                  href={personalInfo.cvUrl}
+                  download
+                  className="rounded-full border border-white/10 bg-white/5 px-5 py-2.5 text-sm font-medium text-white transition-all hover:bg-white/10"
+                >
+                  Download CV
+                </a>
+                <a
+                  href={personalInfo.portfolioUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-full border border-white/10 bg-white/5 px-5 py-2.5 text-sm font-medium text-white transition-all hover:bg-white/10"
+                >
+                  Portfolio URL
+                </a>
+              </div>
+
+              <div className="space-y-3">
+                <p className="text-sm font-semibold uppercase tracking-wider text-zinc-500">
+                  Code & profiles
+                </p>
+                {codeProfiles.map((profile) => (
+                  <a
+                    key={profile.platform}
+                    href={profile.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block rounded-xl border border-white/10 bg-white/[0.02] p-4 transition-colors hover:border-white/20"
+                  >
+                    <div className="flex items-center justify-between">
+                      <p className="font-semibold text-white">{profile.platform}</p>
+                      <p className="text-xs text-zinc-500">{profile.stats}</p>
+                    </div>
+                    <p className="mt-1 text-sm text-zinc-500">{profile.description}</p>
+                  </a>
+                ))}
               </div>
             </div>
           </ScrollReveal>
@@ -119,11 +175,11 @@ export function Contact() {
               onSubmit={handleSubmit(onSubmit)}
               className="rounded-2xl border border-white/10 bg-white/[0.03] p-6 md:p-8"
             >
+              <p className="mb-6 text-sm text-zinc-500">
+                Send a message about a role, project, or collaboration.
+              </p>
               <div className="mb-5">
-                <label
-                  htmlFor="name"
-                  className="mb-2 block text-sm font-medium text-zinc-400"
-                >
+                <label htmlFor="name" className="mb-2 block text-sm font-medium text-zinc-400">
                   Name
                 </label>
                 <input
@@ -134,17 +190,11 @@ export function Contact() {
                   placeholder="Your name"
                 />
                 {errors.name ? (
-                  <p className="mt-1 text-sm text-red-400">
-                    {errors.name.message}
-                  </p>
+                  <p className="mt-1 text-sm text-red-400">{errors.name.message}</p>
                 ) : null}
               </div>
-
               <div className="mb-5">
-                <label
-                  htmlFor="email"
-                  className="mb-2 block text-sm font-medium text-zinc-400"
-                >
+                <label htmlFor="email" className="mb-2 block text-sm font-medium text-zinc-400">
                   Email
                 </label>
                 <input
@@ -152,20 +202,14 @@ export function Contact() {
                   type="email"
                   {...register("email")}
                   className="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-white outline-none transition-colors focus:border-violet-500/50"
-                  placeholder="you@example.com"
+                  placeholder="you@company.com"
                 />
                 {errors.email ? (
-                  <p className="mt-1 text-sm text-red-400">
-                    {errors.email.message}
-                  </p>
+                  <p className="mt-1 text-sm text-red-400">{errors.email.message}</p>
                 ) : null}
               </div>
-
               <div className="mb-6">
-                <label
-                  htmlFor="message"
-                  className="mb-2 block text-sm font-medium text-zinc-400"
-                >
+                <label htmlFor="message" className="mb-2 block text-sm font-medium text-zinc-400">
                   Message
                 </label>
                 <textarea
@@ -173,15 +217,12 @@ export function Contact() {
                   rows={5}
                   {...register("message")}
                   className="w-full resize-none rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-white outline-none transition-colors focus:border-violet-500/50"
-                  placeholder="Tell me about your project..."
+                  placeholder="Tell me about the opportunity..."
                 />
                 {errors.message ? (
-                  <p className="mt-1 text-sm text-red-400">
-                    {errors.message.message}
-                  </p>
+                  <p className="mt-1 text-sm text-red-400">{errors.message.message}</p>
                 ) : null}
               </div>
-
               <motion.button
                 type="submit"
                 disabled={status === "loading"}
@@ -191,17 +232,13 @@ export function Contact() {
               >
                 {status === "loading" ? "Sending..." : "Send Message"}
               </motion.button>
-
               {status === "success" ? (
                 <p className="mt-4 text-center text-sm text-emerald-400">
-                  Message sent successfully! I&apos;ll get back to you soon.
+                  Message sent! I&apos;ll get back to you soon.
                 </p>
               ) : null}
-
               {status === "error" ? (
-                <p className="mt-4 text-center text-sm text-red-400">
-                  {errorMessage}
-                </p>
+                <p className="mt-4 text-center text-sm text-red-400">{errorMessage}</p>
               ) : null}
             </form>
           </ScrollReveal>

@@ -1,22 +1,34 @@
 import { Footer } from "@/components/layout/Footer";
+import { FloatingCTA } from "@/components/layout/FloatingCTA";
 import { Header } from "@/components/layout/Header";
 import { About } from "@/components/sections/About";
 import { Contact } from "@/components/sections/Contact";
 import { Education } from "@/components/sections/Education";
 import { Experience } from "@/components/sections/Experience";
+import { Expertise } from "@/components/sections/Expertise";
+import { GitHubShowcase } from "@/components/sections/GitHubShowcase";
 import { Hero } from "@/components/sections/Hero";
+import { HireCTA } from "@/components/sections/HireCTA";
+import { Impact } from "@/components/sections/Impact";
+import { Projects } from "@/components/sections/Projects";
 import { Skills } from "@/components/sections/Skills";
 
 export default function Home() {
   return (
     <>
       <Header />
+      <FloatingCTA />
       <main>
         <Hero />
         <About />
-        <Skills />
+        <Impact />
+        <Projects />
         <Experience />
+        <Expertise />
+        <Skills />
+        <GitHubShowcase />
         <Education />
+        <HireCTA />
         <Contact />
       </main>
       <Footer />

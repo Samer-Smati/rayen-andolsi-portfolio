@@ -42,10 +42,17 @@ export function Header() {
             </a>
           ))}
           <a
-            href="#contact"
+            href={personalInfo.cvUrl}
+            download
+            className="hidden rounded-full border border-white/10 px-4 py-2 text-sm font-medium text-zinc-400 transition-colors hover:text-white md:inline-block"
+          >
+            CV
+          </a>
+          <a
+            href={`tel:${personalInfo.phone.replace(/\s/g, "")}`}
             className="rounded-full bg-gradient-to-r from-violet-500 to-cyan-500 px-5 py-2 text-sm font-semibold text-white transition-transform hover:scale-105"
           >
-            Hire Me
+            Call Me
           </a>
         </nav>
 
@@ -87,11 +94,11 @@ export function Header() {
                 </a>
               ))}
               <a
-                href={`mailto:${personalInfo.email}`}
-                className="text-sm text-violet-400"
+                href={`tel:${personalInfo.phone.replace(/\s/g, "")}`}
+                className="text-sm font-semibold text-violet-400"
                 onClick={() => setMobileOpen(false)}
               >
-                {personalInfo.email}
+                {personalInfo.phone}
               </a>
             </div>
           </motion.nav>
