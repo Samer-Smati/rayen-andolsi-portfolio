@@ -30,7 +30,7 @@ export function Hero() {
           Available for opportunities
         </motion.div>
 
-        <h1 className="mb-4 text-5xl font-bold leading-[1.1] tracking-tight text-white md:text-7xl lg:text-8xl">
+        <h1 className="mb-4 font-[family-name:var(--font-syne)] text-5xl font-bold leading-[1.1] tracking-tight text-white md:text-7xl lg:text-8xl">
           <AnimatedText text="Samer" />
           <br />
           <span className="bg-gradient-to-r from-violet-400 via-cyan-400 to-orange-400 bg-clip-text text-transparent">
