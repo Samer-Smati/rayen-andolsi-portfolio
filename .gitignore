@@ -42,6 +42,6 @@ yarn-error.log*
 next-env.d.ts
 
 
-#pdf
-*.pdf
+# Ignore PDF at repo root only — CV in public/ is deployed
+/SAMER_CV_EN.pdf
 .vercel
