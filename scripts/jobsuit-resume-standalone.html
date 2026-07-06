@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Samer Smati - Resume</title>
+  <style>
+
+    @page {
+      size: A4;
+      margin: 0mm;
+    }
+    body {
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+      background: #f4f4f4;
+      color: #000;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+    .page-creative {
+          margin: 0mm auto;
+
+      width: 210mm; min-height: 297mm; height: 1123px;
+      background: #fff;
+      color: #2d3748;
+      padding: 12.7mm 12.7mm;
+      box-sizing: border-box;
+      /* Set CSS variables for fonts */
+      --resume-primary-font: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+      --resume-secondary-font: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+      font-family: var(--resume-secondary-font);
+      font-size: 11px;
+      line-height: 1.6; overflow: hidden;
+      border: 1px solid #ddd;
+    }
+    #resume-container-creative {
+      font-family: var(--resume-secondary-font);
+    }
+    a { color: #3366cc; text-decoration: none; font-weight: 500; }
+    a:hover { text-decoration: underline; }
+
+    /* Header */
+    .header-creative {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 25px;
+      justify-content: flex-start;
+      text-align: left;
+    }
+    .header-text-content-creative {
+      text-align: left;
+    }
+    .avatar-creative {
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        object-fit: cover;
+        flex-shrink: 0;
+    }
+    .header-text-content-creative {
+      flex-grow: 1;
+    }
+    .name-creative { font-size: 36px; font-weight: 700; font-family: var(--resume-primary-font); }
+    .contact-info-creative { display: flex; flex-wrap: wrap; width: 100%; gap: 15px; margin-top: 10px; font-size: 10px; color: #4a5568;
+      justify-content: flex-start;
+    }
+    .contact-info-creative span { display: flex; align-items: center; gap: 5px; }
+
+    /* Sections */
+    .section-creative {
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+    /* Wrapper for spacing between sections */
+    .section-wrapper-creative {
+      margin-bottom: 13.3px;
+    }
+    /* Section titles should not add extra spacing, they inherit from parent */
+    .section-title-creative {
+      display: flex;
+      align-items: center;
+      font-size: 18px;
+      font-weight: 600;
+      padding-bottom: 5px;
+      margin-bottom: 5.32px;
+      margin-top: 0;
+      border-bottom: 1px solid #e2e8f0;
+      font-family: var(--resume-primary-font);
+    }
+    .section-title-creative svg { stroke: #2563eb; }
+    .section-content-creative { color: #4a5568; }
+
+    /* Timeline Sections */
+    .timeline-section { position: relative; padding-left: 25px; }
+    .timeline-section::before { content: ''; position: absolute; left: 4px; top: 30px; bottom: 0; width: 2px; background-color: #d1d5db; }
+
+    /* Items */
+    .item-creative { position: relative; margin-bottom: 0; }
+    .work-entry-wrapper { margin-bottom: 7.98px; }
+    .timeline-section .item-creative::before { content: ''; position: absolute; left: -22px; top: 5px; width: 10px; height: 10px; border-radius: 50%; background-color: #2563eb; border: 2px solid #fff; }
+    .item-header-creative { font-size: 14px; font-weight: 600; }
+    .item-secondary-title-creative { font-weight: 400; color: #4a5568; }
+    .item-meta-creative { font-size: 10px; color: #718096; margin-bottom: 5px; }
+    ul.responsibilities-creative { list-style-type: none; margin: 0; padding: 0; }
+    ul.responsibilities-creative li { position: relative; padding-left: 15px; color: #4a5568; }
+    ul.responsibilities-creative li::before { content: '–'; position: absolute; left: 0; }
+
+    /* Skills */
+    .skills-container-creative {
+      font-size: 12px;
+      line-height: 1.6;
+      color: #4a5568;
+    }
+    .skill-category-creative {
+      margin-bottom: 4px;
+    }
+    .skill-category-creative:last-child {
+      margin-bottom: 0;
+    }
+    .skill-category-creative strong {
+      margin-right: 5px;
+      color: #1a202c;
+    }
+
+    /* Education Additional Info */
+    .education-additional-info { margin-top: 5px; font-size: 10px; color: #718096; }
+
+    /* Edit Highlighting */
+    .edited-value { color: #000; background-color: #dcfce7; padding: 1px 3px; border-radius: 2px; font-weight: normal; }
+
+    @media print {
+      body { background: none; }
+      .page-creative {
+        margin: 0;
+        box-shadow: none;
+        page-break-after: always;
+      }
+      .no-print { display: none; }
+      #resume-container-creative {
+        transform: none !important;
+      }
+    }
+  
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: #fff;
+    }
+    #resume-container-creative {
+      transform: none !important;
+      width: 210mm !important;
+      height: auto !important;
+      margin: 0 auto;
+    }
+    .page-creative {
+      margin: 0 auto !important;
+      box-shadow: none !important;
+      border: none !important;
+      page-break-after: always;
+      break-after: page;
+    }
+    .page-creative:last-child {
+      page-break-after: auto;
+      break-after: auto;
+    }
+  </style>
+</head>
+<body>
+  <div id="resume-container-creative">
+<div class="page-creative" style="font-family: Arial, &quot;Helvetica Neue&quot;, Helvetica, sans-serif;"><div class="header-creative">
+          <img src="data:image/jpeg;base64,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" alt="Avatar" class="avatar-creative">
+          <div class="header-text-content-creative">
+            <div class="name-creative editable-field" data-editable="name" style="cursor: text; position: relative;">Samer Smati</div>
+            <div class="contact-info-creative">
+              <span data-editable="email"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg> <span class="editable-text editable-field" style="cursor: text; position: relative;">samersmati@gmail.com</span></span>
+              <span data-editable="phone"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg> <span class="editable-text editable-field" style="cursor: text; position: relative;">+216 20 871 852</span></span>
+              <span data-editable="location"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg> <span class="editable-text editable-field" style="cursor: text; position: relative;">La Soukra, Tunis</span></span>
+              <span data-editable="linkedin"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg> <span class="editable-text editable-field" style="cursor: text; position: relative;"><a href="https://www.linkedin.com/in/samer-smati-781195150/" target="_blank" style="color: rgb(10, 102, 194); font-weight: 500; cursor: pointer;">LinkedIn</a></span></span>
+              <span data-editable="portfolio"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.72"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.72-1.72"></path></svg> <span class="editable-text editable-field" style="cursor: text; position: relative; outline: none;"><a href="https://portf-nine-eta.vercel.app" target="_blank" style="cursor: pointer;">https://portf-nine-eta.vercel.app</a></span></span>
+              <span data-editable="github"><svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg> <span class="editable-text editable-field" style="cursor: text; position: relative;"><a href="https://github.com/Samer-Smati" target="_blank" style="color: rgb(10, 102, 194); font-weight: 500; cursor: pointer;">GitHub</a></span></span>
+              
+              
+              
+            </div>
+          </div>
+        </div><div class="section-creative" style="cursor: pointer;">
+                <div class="section-title-creative"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" style="margin-right: 8px; flex-shrink: 0;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg> <span data-section-title="professional_summary" class="editable-field" style="cursor: text; position: relative; outline: none;">Professional Summary</span></div>
+                <div class="section-content-creative editable-field" data-editable="summary" style="cursor: text; position: relative; outline: none;">Versatile software developer with 6+ years of experience specializing in modern front-end and full-stack development. Proficient in TypeScript, React.js, Angular, and Next.js, with additional expertise in Node.js and Flask for back-end development. Skilled in building scalable, high-performance web applications, implementing responsive designs, and delivering seamless user experiences. Adept at collaborating with cross-functional teams, meeting tight deadlines, and driving innovation. Actively seeking opportunities to apply my technical expertise to impactful projects.</div>
+            </div><div class="section-wrapper-creative"></div><div class="section-creative" style="cursor: pointer;"><div class="section-title-creative"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" style="margin-right: 8px; flex-shrink: 0;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="7" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg> <span data-section-title="work_experience" class="editable-field" style="cursor: text; position: relative;">Work Experience</span></div></div><div class="item-creative timeline-section">
+              <div class="item-header-creative">
+                <span class="item-main-title-creative editable-field" data-editable-title="work_experience-0-main" style="cursor: text; position: relative;">Full-Stack Developer</span>
+                 <span class="item-secondary-title-creative editable-field" data-editable-title="work_experience-0-secondary" style="cursor: text; position: relative;">at Intedgroup</span>
+              </div>
+              <div class="item-meta-creative">
+                <span data-editable-date="work_experience-0-start" class="editable-field" style="cursor: text; position: relative;">2025-04-01</span> – <span data-editable-date="work_experience-0-end" class="editable-field" style="cursor: text; position: relative;">Present</span> | <span data-editable-loc="work_experience-0" class="editable-field" style="cursor: text; position: relative;">Tunis, Tunisia</span>
+              </div>
+            </div><div class="item-creative"><ul class="responsibilities-creative"><li data-editable-resp="work_experience-0-0" class="editable-field" style="cursor: text; position: relative; outline: none;">Architected and deployed micro-services for student records, trainer assignments, and multi-campus application workflows, serving 5+ school entities with unified digital infrastructure.</li></ul></div><div class="item-creative"><ul class="responsibilities-creative"><li data-editable-resp="work_experience-0-1" class="editable-field" style="cursor: text; position: relative; outline: none;">Engineered secure JWT authentication flows and role-based dashboards for 4 distinct user types, streamlining enrollment, scheduling, and administrative oversight across campuses.</li></ul></div><div class="item-creative"><ul class="responsibilities-creative"><li data-editable-resp="work_experience-0-2" class="editable-field" style="cursor: text; position: relative; outline: none;">Collaborated with product owners in Agile sprint cycles to deliver scalable, maintainable features aligned with business-critical academic and administrative needs.</li></ul></div><div class="item-creative last-bullet-of-entry work-entry-wrapper"><ul class="responsibilities-creative"><li data-editable-resp="work_experience-0-3" class="editable-field" style="cursor: text; position: relative; outline: none;">Tech Stack: Angular 19 / Node.js / TypeScript / PrimeNG 19 / SASS / SCSS / Tailwind</li></ul></div><div class="item-creative timeline-section">
+              <div class="item-header-creative">
+                <span class="item-main-title-creative editable-field" data-editable-title="work_experience-1-main" style="cursor: text; position: relative;">Full-Stack Developer</span>
+                 <span class="item-secondary-title-creative editable-field" data-editable-title="work_experience-1-secondary" style="cursor: text; position: relative;">at Memorality</span>
+              </div>
+              <div class="item-meta-creative">
+                <span data-editable-date="work_experience-1-start" class="editable-field" style="cursor: text; position: relative;">2024-10-01</span> – <span data-editable-date="work_experience-1-end" class="editable-field" style="cursor: text; position: relative;">2025-01-31</span> | <span data-editable-loc="work_experience-1" class="editable-field" style="cursor: text; position: relative;">Tunis, Tunisia</span>
+              </div>
+            </div><div class="item-creative"><ul class="responsibilities-creative"><li data-editable-resp="work_experience-1-0" class="editable-field" style="cursor: text; position: relative; outline: none;">Developed an AI-driven event management platform from scratch, leveraging OpenAI API to analyze user profiles and deliver personalized event recommendations, boosting engagement metrics.</li></ul></div><div class="item-creative"><ul class="responsibilities-creative"><li data-editable-resp="work_experience-1-1" class="editable-field" style="cursor: text; position: relative;">Integrated OpenAI APIs into the production recommendation engine, enhancing accuracy of profile-based event matching and improving overall platform engagement rates.</li></ul></div><div class="item-creative"><ul class="responsibilities-creative"><li data-editable-resp="work_experience-1-2" class="editable-field" style="cursor: text; position: relative;">Architected a scalable Next.js + Flask full-stack solution with MongoDB schemas for users, events, and recommendation history, ensuring smooth performance under growing traffic.</li></ul></div><div class="item-creative last-bullet-of-entry work-entry-wrapper"><ul class="responsibilities-creative"><li data-editable-resp="work_experience-1-3" class="editable-field" style="cursor: text; position: relative; outline: none;">Tech Stack: Next.js / Flask / TypeScript / OpenAI API / MongoDB / TailwindCSS</li></ul></div><div class="item-creative timeline-section">
+              <div class="item-header-creative">
+                <span class="item-main-title-creative editable-field" data-editable-title="work_experience-2-main" style="cursor: text; position: relative;">Full-Stack Developer</span>
+                 <span class="item-secondary-title-creative editable-field" data-editable-title="work_experience-2-secondary" style="cursor: text; position: relative;">at Wantotrip</span>
+              </div>
+              <div class="item-meta-creative">
+                <span data-editable-date="work_experience-2-start" class="editable-field" style="cursor: text; position: relative;">2024-05-01</span> – <span data-editable-date="work_experience-2-end" class="editable-field" style="cursor: text; position: relative;">2024-09-30</span> | <span data-editable-loc="work_experience-2" class="editable-field" style="cursor: text; position: relative;">Tunis, Tunisia</span>
+              </div>
+            </div><div class="item-creative"><ul class="responsibilities-creative"><li data-editable-resp="work_experience-2-0" class="editable-field" style="cursor: text; position: relative;">Led a complete UI/UX overhaul of the travel booking platform, redesigning navigation flows, trip filters, and multi-step reservation journeys across desktop and mobile viewports.</li></ul></div><div class="item-creative"><ul class="responsibilities-creative"><li data-editable-resp="work_experience-2-1" class="editable-field" style="cursor: text; position: relative;">Collaborated with .NET backend engineers to integrate booking APIs, delivering fully responsive features that improved user engagement and retention metrics.</li></ul></div><div class="item-creative"><ul class="responsibilities-creative"><li data-editable-resp="work_experience-2-2" class="editable-field" style="cursor: text; position: relative; outline: none;">Refactored legacy Angular modules and optimized component rendering, resulting in faster page loads and a smoother user journey during trip browsing and reservations.</li></ul></div><div class="item-creative last-bullet-of-entry work-entry-wrapper"><ul class="responsibilities-creative"><li data-editable-resp="work_experience-2-3" class="editable-field" style="cursor: text; position: relative; outline: none;">Tech Stack: Angular / TypeScript / SASS / SCSS / MUI / .NET</li></ul></div><div class="item-creative timeline-section">
+              <div class="item-header-creative">
+                <span class="item-main-title-creative editable-field" data-editable-title="work_experience-3-main" style="cursor: text; position: relative; outline: none;">Full-Stack Developer</span>
+                 <span class="item-secondary-title-creative editable-field" data-editable-title="work_experience-3-secondary" style="cursor: text; position: relative;">at ArabyAds</span>
+              </div>
+              <div class="item-meta-creative">
+                <span data-editable-date="work_experience-3-start" class="editable-field" style="cursor: text; position: relative;">2022-07-01</span> – <span data-editable-date="work_experience-3-end" class="editable-field" style="cursor: text; position: relative;">2024-03-31</span> | <span data-editable-loc="work_experience-3" class="editable-field" style="cursor: text; position: relative;">Dubai</span>
+              </div>
+            </div><div class="item-creative"><ul class="responsibilities-creative"><li data-editable-resp="work_experience-3-0" class="editable-field" style="cursor: text; position: relative; outline: none;">Engineered React-based front-end dashboards enabling GCC clients and influencers to create, monitor, and optimize ad campaigns, processing 10K+ campaign events monthly.</li></ul></div><div class="item-creative"><ul class="responsibilities-creative"><li data-editable-resp="work_experience-3-1" class="editable-field" style="cursor: text; position: relative; outline: none;">Developed Node.js and .NET backend services for campaign data ingestion, reporting, and performance analytics, improving system reliability and data integrity at scale.</li></ul></div><div class="item-creative"><ul class="responsibilities-creative"><li data-editable-resp="work_experience-3-2" class="editable-field" style="cursor: text; position: relative; outline: none;">Redesigned UI flows and optimized component rendering, reducing dashboard load times by approximately 40% and significantly boosting client satisfaction.</li></ul></div><div class="item-creative last-bullet-of-entry work-entry-wrapper"><ul class="responsibilities-creative"><li data-editable-resp="work_experience-3-3" class="editable-field" style="cursor: text; position: relative; outline: none;">Tech Stack: ReactJS / Node.js / .NET / JavaScript / SASS / SCSS</li></ul></div></div><div class="page-creative" style="font-family: Arial, &quot;Helvetica Neue&quot;, Helvetica, sans-serif;"><div class="item-creative timeline-section">
+              <div class="item-header-creative">
+                <span class="item-main-title-creative editable-field" data-editable-title="work_experience-4-main" style="cursor: text; position: relative;">Full Stack JS Instructor</span>
+                 <span class="item-secondary-title-creative editable-field" data-editable-title="work_experience-4-secondary" style="cursor: text; position: relative;">at GOMYCODE</span>
+              </div>
+              <div class="item-meta-creative">
+                <span data-editable-date="work_experience-4-start" class="editable-field" style="cursor: text; position: relative;">2022-02-01</span> – <span data-editable-date="work_experience-4-end" class="editable-field" style="cursor: text; position: relative;">2022-07-31</span> | <span data-editable-loc="work_experience-4" class="editable-field" style="cursor: text; position: relative;">Tunis, Tunisia</span>
+              </div>
+            </div><div class="item-creative"><ul class="responsibilities-creative"><li data-editable-resp="work_experience-4-0" class="editable-field" style="cursor: text; position: relative; outline: none;">Delivered hands-on MERN stack instruction to cohorts of 30+ students, guiding them through live coding sessions, code reviews, and real-world application development.</li></ul></div><div class="item-creative"><ul class="responsibilities-creative"><li data-editable-resp="work_experience-4-1" class="editable-field" style="cursor: text; position: relative; outline: none;">Mentored students on client-based capstone projects from requirements through deployment, ensuring practical full-stack development skills and production-ready portfolios.</li></ul></div><div class="item-creative"><ul class="responsibilities-creative"><li data-editable-resp="work_experience-4-2" class="editable-field" style="cursor: text; position: relative; outline: none;">Designed course materials, coding exercises, and project briefs aligned with industry hiring standards to enhance learning outcomes and student employability.</li></ul></div><div class="item-creative last-bullet-of-entry work-entry-wrapper"><ul class="responsibilities-creative"><li data-editable-resp="work_experience-4-3" class="editable-field" style="cursor: text; position: relative; outline: none;">Tech Stack: ReactJS / Node.js / JavaScript / MongoDB / Express / TypeScript / SCSS / Bootstrap / Material UI</li></ul></div><div class="item-creative timeline-section">
+              <div class="item-header-creative">
+                <span class="item-main-title-creative editable-field" data-editable-title="work_experience-5-main" style="cursor: text; position: relative;">Web Developer</span>
+                 <span class="item-secondary-title-creative editable-field" data-editable-title="work_experience-5-secondary" style="cursor: text; position: relative;">at Freelance</span>
+              </div>
+              <div class="item-meta-creative">
+                <span data-editable-date="work_experience-5-start" class="editable-field" style="cursor: text; position: relative;">2021-12-01</span> – <span data-editable-date="work_experience-5-end" class="editable-field" style="cursor: text; position: relative;">2022-03-31</span>
+              </div>
+            </div><div class="item-creative"><ul class="responsibilities-creative"><li data-editable-resp="work_experience-5-0" class="editable-field" style="cursor: text; position: relative;">Managed end-to-end project lifecycle for 5+ WordPress and PrestaShop client websites, from discovery and scope definition through QA testing and successful launch.</li></ul></div><div class="item-creative"><ul class="responsibilities-creative"><li data-editable-resp="work_experience-5-1" class="editable-field" style="cursor: text; position: relative;">Collaborated with international clients to define project scope, manage timelines and budgets, and coordinate with development teams to ensure on-time, on-budget delivery.</li></ul></div><div class="item-creative"><ul class="responsibilities-creative"><li data-editable-resp="work_experience-5-2" class="editable-field" style="cursor: text; position: relative;">Conducted quality assurance testing and provided ongoing client support, maintaining high satisfaction levels across all delivered projects.</li></ul></div><div class="item-creative last-bullet-of-entry work-entry-wrapper"><ul class="responsibilities-creative"><li data-editable-resp="work_experience-5-3" class="editable-field" style="cursor: text; position: relative;">Tech Stack: jQuery / Ajax / Smarty / PrestaShop / JavaScript / MySQL</li></ul></div><div class="item-creative timeline-section">
+              <div class="item-header-creative">
+                <span class="item-main-title-creative editable-field" data-editable-title="work_experience-6-main" style="cursor: text; position: relative;">Web Developer</span>
+                 <span class="item-secondary-title-creative editable-field" data-editable-title="work_experience-6-secondary" style="cursor: text; position: relative;">at IT Open Sprite (ITOS)</span>
+              </div>
+              <div class="item-meta-creative">
+                <span data-editable-date="work_experience-6-start" class="editable-field" style="cursor: text; position: relative;">2019-11-01</span> – <span data-editable-date="work_experience-6-end" class="editable-field" style="cursor: text; position: relative;">2021-11-30</span> | <span data-editable-loc="work_experience-6" class="editable-field" style="cursor: text; position: relative;">Tunis, Tunisia</span>
+              </div>
+            </div><div class="item-creative"><ul class="responsibilities-creative"><li data-editable-resp="work_experience-6-0" class="editable-field" style="cursor: text; position: relative; outline: none;">Streamlined access to customer reference data across business units, implementing process improvements that enhanced operational efficiency and data availability.</li></ul></div><div class="item-creative"><ul class="responsibilities-creative"><li data-editable-resp="work_experience-6-1" class="editable-field" style="cursor: text; position: relative; outline: none;">Simplified front-end interactions and data flows, improving user experience across enterprise web platforms serving internal and external stakeholders.</li></ul></div><div class="item-creative"><ul class="responsibilities-creative"><li data-editable-resp="work_experience-6-2" class="editable-field" style="cursor: text; position: relative;">Designed technical specifications for website evolutions and developed new application flows, ensuring alignment with business requirements and system architecture.</li></ul></div><div class="item-creative"><ul class="responsibilities-creative"><li data-editable-resp="work_experience-6-3" class="editable-field" style="cursor: text; position: relative; outline: none;">Conducted unit and integration testing across PHP and Symfony applications, ensuring application reliability, robustness, and production-grade stability.</li></ul></div><div class="item-creative last-bullet-of-entry work-entry-wrapper"><ul class="responsibilities-creative"><li data-editable-resp="work_experience-6-4" class="editable-field" style="cursor: text; position: relative;">Tech Stack: PHP / JavaScript / Ajax / Joomla / PrestaShop / CSS / MySQL / Smarty / jQuery / Symfony / WordPress / CodeIgniter / Zend</li></ul></div><div class="section-wrapper-creative"></div><div class="section-creative" style="cursor: pointer;"><div class="section-title-creative"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" style="margin-right: 8px; flex-shrink: 0;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><path d="m4.2 8.5 8 4 8-4"></path><path d="M12 22V12.5"></path></svg> <span data-section-title="education" class="editable-field" style="cursor: text; position: relative;">Education</span></div></div><div class="work-entry-wrapper">
+                    <div class="item-creative timeline-section">
+                        <div class="item-header-creative">
+                            <span class="item-main-title-creative editable-field" data-editable-edu="degree-0" style="cursor: text; position: relative;">Licence in Computer Systems Development (DSI)</span>
+                             <span class="item-secondary-title-creative editable-field" data-editable-edu="university-0" style="cursor: text; position: relative;">at Institut Supérieur des Études Technologiques de Kasserine (ISETK)</span>
+                        </div>
+                        <div class="item-meta-creative">
+                            <span data-editable-edu="graddate-0" class="editable-field" style="cursor: text; position: relative;">2014-06-30</span> | <span data-editable-edu="location-0" class="editable-field" style="cursor: text; position: relative;">Kasserine, Tunisia</span>
+                        </div>
+                        
+                    </div>
+                </div><div class="work-entry-wrapper">
+                    <div class="item-creative timeline-section">
+                        <div class="item-header-creative">
+                            <span class="item-main-title-creative editable-field" data-editable-edu="degree-1" style="cursor: text; position: relative;">Master's in Information Systems Engineering (ISE)</span>
+                             <span class="item-secondary-title-creative editable-field" data-editable-edu="university-1" style="cursor: text; position: relative;">at Université Internationale de Tunis (UIT)</span>
+                        </div>
+                        <div class="item-meta-creative">
+                            <span data-editable-edu="graddate-1" class="editable-field" style="cursor: text; position: relative;">2015–2017</span> | <span data-editable-edu="location-1" class="editable-field" style="cursor: text; position: relative;">Tunis, Tunisia</span>
+                        </div>
+                        <div class="education-additional-info editable-field" data-editable-edu="addinfo-1" style="cursor: text; position: relative;"><p> </p></div>
+                    </div>
+                </div><div class="section-wrapper-creative"></div><div class="section-creative" style="cursor: pointer;"><div class="section-title-creative"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" style="margin-right: 8px; flex-shrink: 0;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12a8 8 0 0 1 8-8V0l4 4-4 4V4a6 6 0 1 0 6 6h2a8 8 0 0 1-16 0Z"></path><path d="m9 16 2 2 4-4"></path></svg> <span data-section-title="certifications" class="editable-field" style="cursor: text; position: relative;">Certifications</span></div></div><div class="item-creative timeline-section entry-without-bullets work-entry-wrapper">
+                        <div class="item-header-creative">
+                            <span class="item-main-title-creative editable-field" data-editable-title="certifications-0-main" style="cursor: text; position: relative;">Full-Stack Development (MERN Stack)</span>
+                             <span class="item-secondary-title-creative editable-field" data-editable-title="certifications-0-secondary" style="cursor: text; position: relative; outline: none;">at GOMYCODE</span>
+                        </div>
+                        <div class="item-meta-creative">
+                            <span data-editable-date="certifications-0-start" class="editable-field" style="cursor: text; position: relative;">2021-09-01</span> – <span data-editable-date="certifications-0-end" class="editable-field" style="cursor: text; position: relative;">2022-02-28</span>
+                        </div>
+                    <div class="section-content-creative editable-field" data-editable-addinfo="certifications-0" style="cursor: text; position: relative; outline: none;">MongoDB, Express.js, React.js, Node.js</div></div><div class="section-wrapper-creative"></div><div class="section-creative" style="cursor: pointer;"><div class="section-title-creative"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" style="margin-right: 8px; flex-shrink: 0;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg> <span data-section-title="skills" class="editable-field" style="cursor: text; position: relative;">Skills</span></div><div class="skills-container-creative"></div></div><div class="section-creative"><div class="skills-container-creative"><div class="skill-category-creative" style="display: block;"><strong data-cat-index="0" class="editable-field" style="cursor: text; position: relative;">Languages</strong>: <span data-cat-skill="0-0" class="editable-field" style="cursor: text; position: relative;">JavaScript</span>, <span data-cat-skill="0-1" class="editable-field" style="cursor: text; position: relative;">HTML</span>, <span data-cat-skill="0-2" class="editable-field" style="cursor: text; position: relative;">CSS</span>, <span data-cat-skill="0-3" class="editable-field" style="cursor: text; position: relative;">TypeScript</span>, <span data-cat-skill="0-4" class="editable-field" style="cursor: text; position: relative;">Python</span>, <span data-cat-skill="0-5" class="editable-field" style="cursor: text; position: relative;">UML</span>, <span data-cat-skill="0-6" class="editable-field" style="cursor: text; position: relative;">NoSQL</span>, <span data-cat-skill="0-7" class="editable-field" style="cursor: text; position: relative;">Mongoose</span></div></div></div><div class="section-creative"><div class="skills-container-creative"><div class="skill-category-creative" style="display: block;"><strong data-cat-index="1" class="editable-field" style="cursor: text; position: relative;">Frameworks</strong>: <span data-cat-skill="1-0" class="editable-field" style="cursor: text; position: relative;">Angular</span>, <span data-cat-skill="1-1" class="editable-field" style="cursor: text; position: relative;">ReactJS</span>, <span data-cat-skill="1-2" class="editable-field" style="cursor: text; position: relative;">Node.js</span>, <span data-cat-skill="1-3" class="editable-field" style="cursor: text; position: relative;">Next.js</span>, <span data-cat-skill="1-4" class="editable-field" style="cursor: text; position: relative;">Flask</span>, <span data-cat-skill="1-5" class="editable-field" style="cursor: text; position: relative;">Express</span></div></div></div><div class="section-creative"><div class="skills-container-creative"><div class="skill-category-creative" style="display: block;"><strong data-cat-index="2" class="editable-field" style="cursor: text; position: relative;">Databases</strong>: <span data-cat-skill="2-0" class="editable-field" style="cursor: text; position: relative;">MySQL</span>, <span data-cat-skill="2-1" class="editable-field" style="cursor: text; position: relative;">MongoDB</span></div></div></div><div class="section-creative"><div class="skills-container-creative"><div class="skill-category-creative" style="display: block;"><strong data-cat-index="3" class="editable-field" style="cursor: text; position: relative;">Tools</strong>: <span data-cat-skill="3-0" class="editable-field" style="cursor: text; position: relative;">Postman</span>, <span data-cat-skill="3-1" class="editable-field" style="cursor: text; position: relative;">Slack</span>, <span data-cat-skill="3-2" class="editable-field" style="cursor: text; position: relative;">Discord</span>, <span data-cat-skill="3-3" class="editable-field" style="cursor: text; position: relative;">Git</span>, <span data-cat-skill="3-4" class="editable-field" style="cursor: text; position: relative;">Agile/Scrum</span></div></div></div><div class="section-creative"><div class="skills-container-creative"><div class="skill-category-creative" style="display: block;"><strong data-cat-index="4" class="editable-field" style="cursor: text; position: relative;">Soft Skills</strong>: <span data-cat-skill="4-0" class="editable-field" style="cursor: text; position: relative;">Teamwork</span>, <span data-cat-skill="4-1" class="editable-field" style="cursor: text; position: relative;">Problem Solving</span>, <span data-cat-skill="4-2" class="editable-field" style="cursor: text; position: relative;">Communication</span>, <span data-cat-skill="4-3" class="editable-field" style="cursor: text; position: relative;">Adaptability</span></div></div></div><div class="section-wrapper-creative"></div><div class="section-creative" style="cursor: pointer;"><div class="section-title-creative"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" style="margin-right: 8px; flex-shrink: 0;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg> <span data-section-title="projects" class="editable-field" style="cursor: text; position: relative;">Projects</span></div></div></div><div class="page-creative" style="font-family: Arial, &quot;Helvetica Neue&quot;, Helvetica, sans-serif;"><div class="item-creative project-item">
+                        <div class="item-header-creative"><span class="item-main-title-creative editable-field" data-editable-proj="title-0" style="cursor: text; position: relative;">Carzone Crawler</span></div>
+                        <div class="item-meta-creative">
+                            <span data-editable-proj="start-0" class="editable-field" style="cursor: text; position: relative;">2025-01-01</span> – <span data-editable-proj="end-0" class="editable-field" style="cursor: text; position: relative;">2025-12-31</span>
+                        </div>
+                    </div><div class="item-creative "><ul class="responsibilities-creative"><li data-editable-desc="projects-0-0" class="editable-field" style="cursor: text; position: relative; outline: none;">Built a production-ready Dockerized TypeScript data crawler with containerized pipelines for reproducible deployments.</li></ul></div><div class="item-creative "><ul class="responsibilities-creative"><li data-editable-desc="projects-0-1" class="editable-field" style="cursor: text; position: relative; outline: none;">Designed scalable scraping workflow architecture using Node.js and TypeScript.</li></ul></div><div class="item-creative last-bullet-of-entry work-entry-wrapper"><ul class="responsibilities-creative"><li data-editable-desc="projects-0-2" class="editable-field" style="cursor: text; position: relative; outline: none;">Tech Stack: TypeScript / Docker / Node.js</li></ul></div><div class="item-creative project-item">
+                        <div class="item-header-creative"><span class="item-main-title-creative editable-field" data-editable-proj="title-1" style="cursor: text; position: relative; outline: none;">Collaborative Blog Platform</span></div>
+                        <div class="item-meta-creative">
+                            <span data-editable-proj="start-1" class="editable-field" style="cursor: text; position: relative;">2025-01-01</span> – <span data-editable-proj="end-1" class="editable-field" style="cursor: text; position: relative;">2025-12-31</span>
+                        </div>
+                    </div><div class="item-creative "><ul class="responsibilities-creative"><li data-editable-desc="projects-1-0" class="editable-field" style="cursor: text; position: relative; outline: none;">Developed a multi-author blogging platform with a responsive SCSS design system and Strapi CMS integration.</li></ul></div><div class="item-creative "><ul class="responsibilities-creative"><li data-editable-desc="projects-1-1" class="editable-field" style="cursor: text; position: relative; outline: none;">Implemented collaborative content creation workflows for multiple authors.</li></ul></div><div class="item-creative last-bullet-of-entry work-entry-wrapper"><ul class="responsibilities-creative"><li data-editable-desc="projects-1-2" class="editable-field" style="cursor: text; position: relative; outline: none;">Tech Stack: SCSS / JavaScript / Strapi CMS</li></ul></div><div class="item-creative project-item">
+                        <div class="item-header-creative"><span class="item-main-title-creative editable-field" data-editable-proj="title-2" style="cursor: text; position: relative;">Backend Evaluation System</span></div>
+                        <div class="item-meta-creative">
+                            <span data-editable-proj="start-2" class="editable-field" style="cursor: text; position: relative;">2024-01-01</span> – <span data-editable-proj="end-2" class="editable-field" style="cursor: text; position: relative;">2024-12-31</span>
+                        </div>
+                    </div><div class="item-creative "><ul class="responsibilities-creative"><li data-editable-desc="projects-2-0" class="editable-field" style="cursor: text; position: relative; outline: none;">Architected a C# .NET back-end evaluation system with structured REST API design for enterprise assessment workflows.</li></ul></div><div class="item-creative "><ul class="responsibilities-creative"><li data-editable-desc="projects-2-1" class="editable-field" style="cursor: text; position: relative; outline: none;">Designed clean API layers and evaluation workflow data processing pipelines.</li></ul></div><div class="item-creative last-bullet-of-entry work-entry-wrapper"><ul class="responsibilities-creative"><li data-editable-desc="projects-2-2" class="editable-field" style="cursor: text; position: relative; outline: none;">Tech Stack: C# / .NET / REST APIs</li></ul></div><div class="item-creative project-item">
+                        <div class="item-header-creative"><span class="item-main-title-creative editable-field" data-editable-proj="title-3" style="cursor: text; position: relative;"><a href="https://portf-nine-eta.vercel.app" target="_blank" style="cursor: pointer;">Portfolio Website</a></span></div>
+                        <div class="item-meta-creative">
+                            <span data-editable-proj="start-3" class="editable-field" style="cursor: text; position: relative;">2026-01-01</span> – <span data-editable-proj="end-3" class="editable-field" style="cursor: text; position: relative;">2026-12-31</span>
+                        </div>
+                    </div><div class="item-creative "><ul class="responsibilities-creative"><li data-editable-desc="projects-3-0" class="editable-field" style="cursor: text; position: relative; outline: none;">Built a personal portfolio using Next.js 16 App Router with Framer Motion animations and serverless contact form via Resend API.</li></ul></div><div class="item-creative "><ul class="responsibilities-creative"><li data-editable-desc="projects-3-1" class="editable-field" style="cursor: text; position: relative; outline: none;">Implemented Zod validation, SEO optimization, and deployed on Vercel with CI/CD workflow.</li></ul></div><div class="item-creative last-bullet-of-entry work-entry-wrapper"><ul class="responsibilities-creative"><li data-editable-desc="projects-3-2" class="editable-field" style="cursor: text; position: relative; outline: none;">Tech Stack: Next.js / TypeScript / Tailwind CSS / Framer Motion / Vercel</li></ul></div><div class="section-wrapper-creative"></div><div class="section-creative" style="cursor: pointer;"><div class="section-title-creative"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" style="margin-right: 8px; flex-shrink: 0;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg> <span data-section-title="languages" class="editable-field" style="cursor: text; position: relative;">Languages</span></div><div class="section-content-creative"><span data-lang-index="0" class="editable-field" style="cursor: text; position: relative;">French (Professional Working Proficiency)</span>, <span data-lang-index="1" class="editable-field" style="cursor: text; position: relative;">English (Professional Working Proficiency)</span>, <span data-lang-index="2" class="editable-field" style="cursor: text; position: relative; outline: none;">Arabic (Native Language)</span></div></div><div class="section-wrapper-creative"></div></div>
+  </div>
+</body>
+</html>

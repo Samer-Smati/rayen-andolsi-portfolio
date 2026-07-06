@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start -p 4000",
     "lint": "eslint",
-    "optimize:profile": "node scripts/optimize-profile.mjs"
+    "optimize:profile": "node scripts/optimize-profile.mjs",
+    "resume:extract": "node scripts/extract-jobsuit-html.mjs",
+    "resume:pdf": "node scripts/jobsuit-to-pdf.mjs"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.4.0",
@@ -24,8 +26,10 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "cheerio": "^1.2.0",
     "eslint": "^9",
     "eslint-config-next": "16.2.10",
+    "puppeteer": "^25.3.0",
     "sharp": "^0.35.3",
     "tailwindcss": "^4",
     "typescript": "^5"
