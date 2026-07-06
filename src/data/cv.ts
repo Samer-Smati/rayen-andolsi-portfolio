@@ -7,7 +7,7 @@ export const personalInfo = {
   phone: "+216 20 871 852",
   phoneDisplay: "+216 20 871 852",
   github: "https://github.com/Samer-Smati",
-  gitlab: "https://gitlab.com/Samer-Smati",
+  gitlab: "https://gitlab.com/Smati_Samer",
   linkedin: "https://www.linkedin.com/in/samer-smati",
   whatsapp: "https://wa.me/21620871852",
   cvUrl: "/SAMER_CV_EN.pdf",

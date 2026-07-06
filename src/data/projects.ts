@@ -198,8 +198,8 @@ export const codeProfiles = [
   },
   {
     platform: "GitLab",
-    username: "Samer-Smati",
-    url: "https://gitlab.com/Samer-Smati",
+    username: "Smati_Samer",
+    url: "https://gitlab.com/Smati_Samer",
     stats: "20+ projects",
     description:
       "React/Node checkpoints, ERP capstone, and imported learning projects — active since 2022",
