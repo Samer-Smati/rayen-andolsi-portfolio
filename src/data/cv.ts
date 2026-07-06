@@ -415,14 +415,14 @@ export type Education = {
 };
 
 export const education: Education[] = [
-  {
-    institution: "GOMYCODE",
-    degree: "Professional Training — Full-Stack Development (MERN Stack)",
-    period: "09/2021 – 02/2022",
-    location: "Tunis, Tunisia",
-    focus:
-      "MongoDB, Express.js, React.js, Node.js — intensive bootcamp with production project delivery.",
-  },
+  // {
+  //   institution: "GOMYCODE",
+  //   degree: "Professional Training — Full-Stack Development (MERN Stack)",
+  //   period: "09/2021 – 02/2022",
+  //   location: "Tunis, Tunisia",
+  //   focus:
+  //     "MongoDB, Express.js, React.js, Node.js — intensive bootcamp with production project delivery.",
+  // },
   {
     institution: "Université Internationale de Tunis (UIT)",
     degree: "Master's in Information Systems Engineering (ISE)",
