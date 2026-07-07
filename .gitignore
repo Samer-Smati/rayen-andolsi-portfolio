@@ -45,3 +45,6 @@ next-env.d.ts
 # Ignore PDF at repo root only — CV in public/ is deployed
 /SAMER_CV_EN.pdf
 .vercel
+
+.vercel
+.env*
