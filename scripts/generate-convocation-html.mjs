@@ -25,9 +25,14 @@ const candidates = [
   },
 ];
 
-function convocationPage(candidate, pageBreak = true) {
+function wordPageBreak() {
+  return `<p style="margin:0; padding:0; line-height:0; font-size:0; page-break-before:always;"><br clear="all" style="mso-special-character:line-break; clear:both;" /></p>`;
+}
+
+function convocationPage(candidate, isFirstPage) {
   return `
-  <div class="page"${pageBreak ? ' style="page-break-after: always;"' : ""}>
+  ${isFirstPage ? "" : wordPageBreak()}
+  <div class="page">
     <table class="header-table" style="width:100%; border-collapse:collapse; border:none; margin-bottom:12px;">
       <tr>
         <td style="width:19%; vertical-align:top; border:none; padding:0;">
@@ -50,7 +55,7 @@ function convocationPage(candidate, pageBreak = true) {
 
     <hr style="border:none; border-bottom:1px solid #B0BEC5; margin:16px 0 20px;" />
 
-    <p style="margin:0 0 20px; font-family:Arial,sans-serif; font-size:9.5pt; color:#14213D;">
+    <p style="margin:0 0 16px; font-family:Arial,sans-serif; font-size:9.5pt; color:#14213D;">
       <strong>Objet :</strong> Convocation à la session d'examen du 27/05/1994 au 28/03/1973 — Assistant Ressources Humaines.
     </p>
 
@@ -69,19 +74,19 @@ function convocationPage(candidate, pageBreak = true) {
       </tr>
     </table>
 
-    <p style="margin:0 0 12px; font-family:Arial,sans-serif; font-size:10pt; color:#14213D;">Madame, Monsieur,</p>
+    <p style="margin:0 0 8px; font-family:Arial,sans-serif; font-size:10pt; color:#14213D;">Madame, Monsieur,</p>
 
-    <p style="margin:0 0 12px; font-family:Arial,sans-serif; font-size:10pt; color:#14213D; text-align:justify;">
+    <p style="margin:0 0 8px; font-family:Arial,sans-serif; font-size:10pt; color:#14213D; text-align:justify;">
       Vous êtes convoqué(e) à la session d'examen visant l'obtention du titre professionnel de Assistant Ressources Humaines (TP-00765) qui se déroulera au centre de NOVIA.
     </p>
 
-    <p style="margin:0 0 12px; font-family:Arial,sans-serif; font-size:10pt; color:#14213D; text-align:justify;">
+    <p style="margin:0 0 8px; font-family:Arial,sans-serif; font-size:10pt; color:#14213D; text-align:justify;">
       Vous voudrez bien vous présenter muni(e) d'une pièce d'identité et de la présente convocation à l'adresse suivante :
     </p>
 
-    <p style="margin:16px 0; font-family:Arial,sans-serif; font-size:11pt; font-weight:bold; color:#14213D; text-align:center;">1 RUE BAUDIN 34000 MONTPELLIER</p>
+    <p style="margin:12px 0; font-family:Arial,sans-serif; font-size:11pt; font-weight:bold; color:#14213D; text-align:center;">1 RUE BAUDIN 34000 MONTPELLIER</p>
 
-    <p style="margin:0 0 16px; font-family:Arial,sans-serif; font-size:9.5pt; color:#14213D;">
+    <p style="margin:0 0 12px; font-family:Arial,sans-serif; font-size:9.5pt; color:#14213D;">
       <strong>N° candidat CERES :</strong> ${candidate.ceres}
     </p>
 
@@ -98,16 +103,16 @@ function convocationPage(candidate, pageBreak = true) {
       </tr>
     </table>
 
-    <p style="margin:0 0 12px; font-family:Arial,sans-serif; font-size:10pt; color:#14213D; text-align:justify;">
+    <p style="margin:0 0 8px; font-family:Arial,sans-serif; font-size:10pt; color:#14213D; text-align:justify;">
       Merci de vous présenter 10 minutes avant l'heure indiquée, muni(e) d'une pièce d'identité valide.
     </p>
 
-    <p style="margin:0 0 24px; font-family:Arial,sans-serif; font-size:10pt; color:#14213D; text-align:justify;">
+    <p style="margin:0 0 16px; font-family:Arial,sans-serif; font-size:10pt; color:#14213D; text-align:justify;">
       Je vous prie d'agréer, Madame, Monsieur, l'expression de ma considération distinguée.
     </p>
 
     <p style="margin:0; font-family:Arial,sans-serif; font-size:9.5pt; color:#8296A8;">Le responsable de session</p>
-    <p style="margin:0 0 20px; font-family:Arial,sans-serif; font-size:10pt; font-weight:bold; color:#14213D;">Nostrud sed elit od</p>
+    <p style="margin:0 0 12px; font-family:Arial,sans-serif; font-size:10pt; font-weight:bold; color:#14213D;">Nostrud sed elit od</p>
 
     <hr style="border:none; border-top:1px solid #B0BEC5; margin:16px 0 0;" />
     <p style="margin:8px 0 0; font-family:Arial,sans-serif; font-size:8pt; color:#8296A8; text-align:center;">
@@ -123,14 +128,17 @@ const html = `<!DOCTYPE html>
   <title>Convocations Candidats — Session Cumque voluptatem na</title>
   <style>
     @page { size: A4; margin: 1.8cm 1.8cm; }
-    body { margin: 0; padding: 24px; background: #fff; color: #14213D; }
-    .page { max-width: 18cm; margin: 0 auto 0; }
+    body { margin: 0; padding: 0; background: #fff; color: #14213D; }
+    .page { max-width: 18cm; margin: 0 auto; }
     table { border-spacing: 0; }
     td { vertical-align: top; }
+    p { margin-top: 0; }
   </style>
 </head>
 <body>
-${candidates.map((c, i) => convocationPage(c, i < candidates.length - 1)).join("\n")}
+<div class="Section1">
+${candidates.map((c, i) => convocationPage(c, i === 0)).join("\n")}
+</div>
 </body>
 </html>`;
 
