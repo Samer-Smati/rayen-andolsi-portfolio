@@ -11,14 +11,15 @@ import { motion } from "framer-motion";
 
 export function HireCTA() {
   const phoneHref = `tel:${personalInfo.phone.replace(/\s/g, "")}`;
+  const encodedName = encodeURIComponent(personalInfo.name);
 
   return (
     <section className="px-6 py-16 md:py-20">
       <div className="mx-auto max-w-6xl">
         <ScrollReveal>
-          <div className="relative overflow-hidden rounded-3xl border border-violet-500/20 bg-gradient-to-br from-violet-600/20 via-[#0a0a0f] to-cyan-600/10 p-8 md:p-12">
-            <div className="absolute -right-16 -top-16 h-48 w-48 rounded-full bg-violet-500/20 blur-3xl" />
-            <div className="absolute -bottom-16 -left-16 h-48 w-48 rounded-full bg-cyan-500/15 blur-3xl" />
+          <div className="relative overflow-hidden rounded-3xl border border-indigo-500/20 bg-gradient-to-br from-indigo-600/20 via-[#0b0f14] to-emerald-600/10 p-8 md:p-12">
+            <div className="absolute -right-16 -top-16 h-48 w-48 rounded-full bg-indigo-500/20 blur-3xl" />
+            <div className="absolute -bottom-16 -left-16 h-48 w-48 rounded-full bg-emerald-500/15 blur-3xl" />
 
             <div className="relative mb-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
               {[
@@ -41,10 +42,10 @@ export function HireCTA() {
 
             <div className="relative grid gap-8 lg:grid-cols-2 lg:items-start">
               <div>
-                <p className="mb-2 text-sm font-semibold uppercase tracking-[0.25em] text-violet-400">
+                <p className="mb-2 text-sm font-semibold uppercase tracking-[0.25em] text-indigo-400">
                   Work With Me
                 </p>
-                <h2 className="mb-4 font-[family-name:var(--font-syne)] text-3xl font-bold text-white md:text-4xl">
+                <h2 className="mb-4 font-[family-name:var(--font-space-grotesk)] text-3xl font-bold text-white md:text-4xl">
                   Let&apos;s build production software
                 </h2>
                 <p className="mb-6 text-base leading-relaxed text-zinc-400 md:text-lg">
@@ -76,7 +77,7 @@ export function HireCTA() {
               <div className="flex flex-col gap-4">
                 <motion.a
                   href={phoneHref}
-                  className="flex items-center justify-center rounded-2xl bg-gradient-to-r from-violet-500 to-cyan-500 px-8 py-5 text-lg font-bold text-white shadow-lg shadow-violet-500/30"
+                  className="flex items-center justify-center rounded-2xl bg-gradient-to-r from-indigo-500 to-emerald-500 px-8 py-5 text-lg font-bold text-white shadow-lg shadow-indigo-500/30"
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                 >
@@ -91,7 +92,7 @@ export function HireCTA() {
                   WhatsApp
                 </a>
                 <a
-                  href={`mailto:${personalInfo.email}?subject=Project%20Inquiry%20-%20Samer%20Smati`}
+                  href={`mailto:${personalInfo.email}?subject=Project%20Inquiry%20-%20${encodedName}`}
                   className="flex items-center justify-center rounded-2xl border border-white/20 bg-white/5 px-8 py-4 text-base font-semibold text-white transition-colors hover:bg-white/10"
                 >
                   Email Me

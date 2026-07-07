@@ -8,8 +8,8 @@ import { motion } from "framer-motion";
 
 const typeStyles: Record<string, string> = {
   Professional: "bg-emerald-500/15 text-emerald-300",
-  "Open Source": "bg-cyan-500/15 text-cyan-300",
-  "Live Demo": "bg-violet-500/15 text-violet-300",
+  "Open Source": "bg-emerald-500/15 text-emerald-300",
+  "Live Demo": "bg-indigo-500/15 text-indigo-300",
 };
 
 export function Projects() {
@@ -19,7 +19,7 @@ export function Projects() {
         <SectionHeading
           label="Projects"
           title="Selected Work"
-          description="Production platforms with measurable impact — GCC AdTech in Dubai, AI SaaS, EdTech, and live open-source demos."
+          description="Enterprise ERP/CRM, chatbot solutions, health platforms, and backend services — built with Java, Angular, and modern full-stack tools."
         />
 
         <div className="grid gap-6 md:grid-cols-2">
@@ -32,7 +32,7 @@ export function Projects() {
               <motion.article
                 className={`group flex h-full flex-col rounded-2xl border p-6 transition-all md:p-8 ${
                   project.featured
-                    ? "border-violet-500/20 bg-violet-500/[0.04] hover:border-violet-500/40"
+                    ? "border-indigo-500/20 bg-indigo-500/[0.04] hover:border-indigo-500/40"
                     : "border-white/10 bg-white/[0.02] hover:border-white/20"
                 }`}
                 whileHover={{ y: -4 }}
@@ -51,7 +51,7 @@ export function Projects() {
                   ) : null}
                 </div>
 
-                <h3 className="mb-2 text-xl font-bold text-white group-hover:text-violet-300">
+                <h3 className="mb-2 text-xl font-bold text-white group-hover:text-indigo-300">
                   {project.title}
                 </h3>
                 <p className="mb-4 flex-1 text-sm leading-relaxed text-zinc-400 md:text-base">
@@ -62,7 +62,7 @@ export function Projects() {
                   {project.metrics.map((metric) => (
                     <span
                       key={metric}
-                      className="rounded-full border border-cyan-500/20 bg-cyan-500/10 px-2.5 py-0.5 text-xs font-medium text-cyan-300"
+                      className="rounded-full border border-emerald-500/20 bg-emerald-500/10 px-2.5 py-0.5 text-xs font-medium text-emerald-300"
                     >
                       {metric}
                     </span>
@@ -75,7 +75,7 @@ export function Projects() {
                       key={highlight}
                       className="flex gap-2 text-xs text-zinc-500 md:text-sm"
                     >
-                      <span className="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-violet-400" />
+                      <span className="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-indigo-400" />
                       {highlight}
                     </li>
                   ))}
@@ -100,7 +100,7 @@ export function Projects() {
                           ? "noopener noreferrer"
                           : undefined
                       }
-                      className="text-sm font-semibold text-violet-400 transition-colors hover:text-cyan-400"
+                      className="text-sm font-semibold text-indigo-400 transition-colors hover:text-emerald-400"
                     >
                       {link.label} →
                     </a>

@@ -11,19 +11,19 @@ export function Education() {
         <SectionHeading
           label="Education"
           title="Academic Background"
-          description="Formal training in information systems engineering, complemented by intensive MERN stack bootcamp."
+          description="Formal training in computer systems development with a focus on software engineering fundamentals."
         />
 
         <div className="mb-16 grid gap-6">
           {education.map((item, index) => (
             <ScrollReveal key={item.institution} delay={index * 0.1}>
-              <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-6 transition-colors hover:border-cyan-500/30 md:p-8">
+              <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-6 transition-colors hover:border-emerald-500/30 md:p-8">
                 <div className="flex flex-col gap-3 md:flex-row md:items-start md:justify-between">
                   <div className="flex-1">
                     <h3 className="text-lg font-bold text-white md:text-xl">
                       {item.degree}
                     </h3>
-                    <p className="mt-1 text-cyan-400">{item.institution}</p>
+                    <p className="mt-1 text-emerald-400">{item.institution}</p>
                     {item.focus ? (
                       <p className="mt-3 text-sm leading-relaxed text-zinc-500">
                         {item.focus}
@@ -50,7 +50,7 @@ export function Education() {
                     key={skill.title}
                     className="border-b border-white/5 pb-5 last:border-0 last:pb-0"
                   >
-                    <p className="font-semibold text-violet-300">{skill.title}</p>
+                    <p className="font-semibold text-indigo-300">{skill.title}</p>
                     <p className="mt-1 text-sm leading-relaxed text-zinc-500">
                       {skill.description}
                     </p>
@@ -72,7 +72,7 @@ export function Education() {
                     </div>
                     <div className="h-1.5 overflow-hidden rounded-full bg-white/10">
                       <div
-                        className="h-full rounded-full bg-gradient-to-r from-violet-500 to-cyan-500"
+                        className="h-full rounded-full bg-gradient-to-r from-indigo-500 to-emerald-500"
                         style={{ width: `${lang.proficiency}%` }}
                       />
                     </div>

@@ -6,7 +6,6 @@ import { Contact } from "@/components/sections/Contact";
 import { Education } from "@/components/sections/Education";
 import { Experience } from "@/components/sections/Experience";
 import { Expertise } from "@/components/sections/Expertise";
-import { GitLabShowcase } from "@/components/sections/GitLabShowcase";
 import { GitHubShowcase } from "@/components/sections/GitHubShowcase";
 import { Hero } from "@/components/sections/Hero";
 import { HireCTA } from "@/components/sections/HireCTA";
@@ -27,7 +26,6 @@ export default function Home() {
         <Experience />
         <Expertise />
         <Skills />
-        <GitLabShowcase />
         <GitHubShowcase />
         <Education />
         <HireCTA />

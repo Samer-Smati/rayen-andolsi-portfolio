@@ -1,66 +1,56 @@
 import type { Metadata } from "next";
-import { DM_Sans, Syne } from "next/font/google";
+import { Inter, Space_Grotesk } from "next/font/google";
 import { JsonLd } from "@/components/seo/JsonLd";
 import "./globals.css";
 
-const syne = Syne({
-  variable: "--font-syne",
+const spaceGrotesk = Space_Grotesk({
+  variable: "--font-space-grotesk",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800"],
+  weight: ["400", "500", "600", "700"],
 });
 
-const dmSans = DM_Sans({
-  variable: "--font-dm-sans",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
 });
 
 const siteUrl =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://portf-nine-eta.vercel.app";
+  process.env.NEXT_PUBLIC_SITE_URL ??
+  "https://rayen-andolsi-portfolio.vercel.app";
 
 export const metadata: Metadata = {
-  title: "Samer Smati — Full-Stack Developer",
+  title: "Rayen Andolsi — Full-Stack Developer",
   description:
-    "Full-Stack Developer with 6+ years experience and 20 months GCC AdTech at ArabyAds Dubai. React, Angular 19, Next.js, Node.js. Arabic native.",
+    "Java & Angular full-stack developer with 4+ years building scalable enterprise applications — Spring Boot, Angular, PrimeNG, ERP/CRM systems.",
   keywords: [
-    "Samer Smati",
-    "Full-Stack Developer Dubai",
-    "Developer Jobs UAE",
-    "React Developer Dubai",
-    "Angular Developer Dubai",
-    "Node.js Developer UAE",
-    "GCC AdTech",
-    "ArabyAds",
-    "GCC AdTech",
-    "Arabic Developer UAE",
+    "Rayen Andolsi",
+    "Full-Stack Developer Tunisia",
+    "Java Developer",
+    "Angular Developer",
+    "Spring Boot Developer",
+    "PrimeNG",
+    "ERP CRM Developer",
     "TypeScript",
-    "Next.js",
+    "Enterprise Applications",
   ],
-  authors: [{ name: "Samer Smati" }],
+  authors: [{ name: "Rayen Andolsi" }],
   metadataBase: new URL(siteUrl),
   alternates: { canonical: siteUrl },
   openGraph: {
-    title: "Samer Smati — Full-Stack Developer",
+    title: "Rayen Andolsi — Full-Stack Developer",
     description:
-      "6+ years full-stack. Ex-ArabyAds Dubai (GCC AdTech). React, Angular, Next.js, Node.js.",
+      "4+ years full-stack. Java Spring Boot, Angular, PrimeNG, ERP/CRM platforms.",
     url: siteUrl,
-    siteName: "Samer Smati Portfolio",
-    locale: "en_AE",
+    siteName: "Rayen Andolsi Portfolio",
+    locale: "en_US",
     type: "website",
-    images: [
-      {
-        url: `${siteUrl}/images/samer-profile.jpg`,
-        width: 1200,
-        height: 1200,
-        alt: "Samer Smati — Full-Stack Developer",
-      },
-    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Samer Smati — Full-Stack Developer",
+    title: "Rayen Andolsi — Full-Stack Developer",
     description:
-      "Full-stack engineer. GCC AdTech experience. React, Angular, Next.js, Node.js.",
+      "Java & Angular full-stack developer. Spring Boot, ERP/CRM, enterprise dashboards.",
   },
   robots: { index: true, follow: true },
 };
@@ -73,14 +63,14 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${syne.variable} ${dmSans.variable} h-full`}
+      className={`${spaceGrotesk.variable} ${inter.variable} h-full`}
       suppressHydrationWarning
     >
       <head>
         <JsonLd />
       </head>
       <body
-        className="min-h-full bg-[#0a0a0f] antialiased"
+        className="min-h-full bg-[#0b0f14] antialiased"
         suppressHydrationWarning
       >
         {children}

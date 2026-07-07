@@ -1,227 +1,227 @@
 export const personalInfo = {
-  name: "Samer Smati",
+  name: "Rayen Andolsi",
   title: "Full-Stack Developer",
-  location: "La Soukra, Tunis, Tunisia",
-  relocationTarget: "Dubai, United Arab Emirates",
-  email: "samersmati@gmail.com",
-  phone: "+216 20 871 852",
-  phoneDisplay: "+216 20 871 852",
-  github: "https://github.com/Samer-Smati",
-  gitlab: "https://gitlab.com/Smati_Samer",
-  linkedin: "https://www.linkedin.com/in/samer-smati",
-  whatsapp: "https://wa.me/21620871852",
-  cvUrl: "/SAMER_CV_EN.pdf",
-  profileImage: "/images/samer-profile.jpg",
-  profileImageAbout: "/images/samer-profile-about.jpg",
+  location: "Mohammedia, Ben Arous, Tunisia",
+  email: "rayen.andolssii@gmail.com",
+  phone: "+216 52 862 929",
+  phoneDisplay: "+216 52 862 929",
+  github: "https://github.com/rayen-andolsi",
+  linkedin: "https://www.linkedin.com/in/17rayen17",
+  whatsapp: "https://wa.me/21652862929",
+  cvUrl: "/cv_rayen_andolsi-1.pdf",
   portfolioUrl:
-    process.env.NEXT_PUBLIC_SITE_URL ?? "https://portf-nine-eta.vercel.app",
-  availability:
-    "Full-Stack Developer · GCC & MENA production experience",
+    process.env.NEXT_PUBLIC_SITE_URL ??
+    "https://rayen-andolsi-portfolio.vercel.app",
+  availability: "Full-Stack Developer · Java & Angular · Open to opportunities",
   recruiterPitch:
-    "Full-stack engineer with 6+ years shipping production apps — including 20 months at ArabyAds in Dubai building GCC AdTech platforms for brands and influencers across MENA. React, Angular 19, Next.js, Node.js, and end-to-end delivery from UI to deployment.",
+    "Java & Angular full-stack developer with 4+ years building scalable enterprise applications — ERP/CRM platforms, Spring Boot APIs, and interactive Angular dashboards with RBAC and CI/CD delivery.",
   linkedinHeadline:
-    "Full-Stack Developer | Ex-ArabyAds (GCC AdTech) | React · Angular · Next.js · Node.js",
+    "Full-Stack Developer | Java Spring Boot · Angular · PrimeNG · ERP/CRM",
   subtitles: [
-    "Ex-ArabyAds · GCC AdTech · Dubai",
-    "Angular 19 · Next.js · React · Node.js · TypeScript",
-    "6+ Years Shipping Production Platforms",
-    "Arabic Native · English Professional · Master's ISE",
+    "Java Spring Boot · Angular · PrimeNG",
+    "ERP/CRM · RBAC · Enterprise Dashboards",
+    "4+ Years Building Production Applications",
+    "Arabic Native · English Professional · French Intermediate",
   ],
   heroTagline:
-    "I build production web platforms end-to-end — front-end, APIs, auth, databases, and deployment. From AdTech dashboards in Dubai to AI-powered SaaS, I ship features that scale.",
+    "I build scalable, secure enterprise applications end-to-end — Spring Boot backends, Angular frontends, role-based access control, and CI/CD pipelines. From ERP platforms serving 30,000+ students to health and e-commerce solutions.",
+  heroBadges: [
+    "Java · Spring Boot",
+    "Angular · PrimeNG",
+    "4+ years experience",
+    "ERP/CRM",
+  ],
 };
 
 export const professionalSummary = {
   focus: "Full-Stack Developer",
-  experience: "6+ years · GCC AdTech & enterprise",
-  stack: "React · Angular · Next.js · Node.js · .NET",
+  experience: "4+ years · Enterprise & EdTech",
+  stack: "Java · Spring Boot · Angular · PrimeNG · TypeScript",
   languages: "Arabic (native) · English · French",
 };
 
 export const summary = {
   intro:
-    "Full-stack developer with 6+ years of experience building production platforms across the GCC and MENA. I combine hands-on AdTech experience from Dubai with modern expertise in TypeScript, React, Angular 19, and Next.js.",
-  body: "At ArabyAds in Dubai, I built React dashboards and Node.js/.NET services processing thousands of campaign events monthly for GCC brands and influencers. I improved platform load times, strengthened reporting pipelines, and shipped features in a fast-paced startup environment. Since then, I've delivered AI-powered SaaS (OpenAI integration), travel booking platforms, and enterprise EdTech systems.",
+    "Java & Angular full-stack developer with 4+ years of professional experience building scalable, secure, and maintainable enterprise applications.",
+  body: "Strong expertise in Java (Spring Boot) and Angular, with solid full-stack knowledge spanning backend APIs, frontend architectures, databases, and CI/CD pipelines. Experienced in ERP/CRM systems, role-based access control, and data-driven dashboards. At Elite Conseil, I design and evolve a large-scale ERP/CRM platform for a multi-campus education group serving 30,000+ students and 500+ instructors.",
   closing:
-    "Trilingual and experienced in multicultural product teams. I take ownership from requirements to production — front-end UX, REST APIs, database design, Docker deployments, and CI-ready workflows.",
+    "Proven ability to work in Agile environments and collaborate with cross-functional teams to deliver high-impact, production-ready solutions — from requirements gathering to deployment.",
 };
 
 export const impactMetrics = [
   {
-    value: "6+",
-    label: "Years Shipping Production Code",
-    detail: "Across 7 companies in MENA & GCC markets",
+    value: "4+",
+    label: "Years Professional Experience",
+    detail: "Full-stack development across enterprise and startup environments",
   },
   {
-    value: "20mo",
-    label: "GCC AdTech in Dubai",
-    detail: "ArabyAds — React, Node.js, .NET at scale",
+    value: "30K+",
+    label: "Students Served",
+    detail: "Elite Conseil ERP/CRM — multi-campus education platform",
   },
   {
-    value: "10K+",
-    label: "Campaign Events Processed",
-    detail: "Monthly reporting & analytics pipelines",
+    value: "500+",
+    label: "Instructors Managed",
+    detail: "Scheduling, allocation & lifecycle management at scale",
   },
   {
-    value: "40%",
-    label: "Faster Page Loads",
-    detail: "UI optimizations at ArabyAds & Wantotrip",
+    value: "4",
+    label: "Companies & Roles",
+    detail: "EdTech, digital agency, health startup & backend services",
   },
   {
-    value: "60+",
-    label: "GitHub Repositories",
-    detail: "Open source, capstones & production experiments",
+    value: "RBAC",
+    label: "Secure Access Control",
+    detail: "Fine-grained roles with strict data isolation",
   },
   {
     value: "3",
-    label: "Languages Fluently",
-    detail: "Arabic native · English & French professional",
+    label: "Languages",
+    detail: "Arabic native · English professional · French intermediate",
   },
 ];
 
 export const professionalHighlights = [
-  "20 months at ArabyAds, Dubai — GCC AdTech for brands & influencers",
-  "6+ years: Angular 19, React, Next.js, Node.js, .NET, MongoDB",
-  "Arabic (native) + English (professional) — multilingual product delivery",
-  "Master's in Information Systems Engineering (UIT)",
-  "End-to-end delivery: UI → API → DB → Docker → deployment",
-  "AI integration, performance optimization, and scalable architecture",
+  "4+ years: Java Spring Boot, Angular, PrimeNG, TypeScript, Node.js",
+  "Large-scale ERP/CRM at Elite Conseil — 30,000+ students, 500+ instructors",
+  "Secure RBAC authentication with fine-grained role-based access control",
+  "CI/CD pipelines with Jenkins and GitHub Actions",
+  "Arabic (native) + English (professional) — cross-functional collaboration",
+  "Bachelor's in Computer Systems Development (ISET Zaghouan)",
 ];
 
 export const trustSignals = [
-  "Production experience at Dubai-based GCC company (ArabyAds)",
-  "Currently active in Angular 19 + Node.js at Elite Conseil",
-  "OpenAI API integration shipped in production (Memorality)",
-  "Docker containerization (Carzone Crawler, 2025)",
-  "Portfolio deployed on Vercel with CI/CD-ready workflow",
+  "Currently building ERP/CRM platform at Elite Conseil (Java/Angular)",
+  "Spring Boot REST APIs with clean architecture and scalable design",
+  "Interactive Angular dashboards with PrimeNG for enterprise data",
+  "CI/CD best practices across Jenkins and GitHub Actions",
+  "Portfolio deployed on Vercel with production-ready workflow",
 ];
 
 export const keyStrengths = [
   {
-    title: "GCC Market Experience",
+    title: "Enterprise ERP/CRM",
     description:
-      "Full-Stack Developer at ArabyAds in Dubai — AdTech dashboards, campaign analytics, Node.js/.NET APIs, and influencer tools for the UAE & wider MENA region.",
+      "Designed and evolved a large-scale platform centralizing student lifecycle management, admissions, scheduling, and instructor allocation for 30,000+ students.",
+  },
+  {
+    title: "Java & Spring Boot",
+    description:
+      "Robust backend services with clean architecture, scalable REST APIs, Spring Data JPA, and secure authentication with JWT and RBAC.",
+  },
+  {
+    title: "Angular Dashboards",
+    description:
+      "Interactive Angular dashboards with PrimeNG transforming complex operational data into actionable insights for administrators and management.",
   },
   {
     title: "End-to-End Ownership",
     description:
-      "Requirements → design → front-end → REST APIs → database → testing → Docker deployment. Full product lifecycle delivery.",
+      "Requirements → design → backend APIs → frontend UI → database → CI/CD deployment. Full product lifecycle delivery.",
   },
   {
-    title: "Arabic & English Products",
+    title: "Agile Collaboration",
     description:
-      "Native Arabic speaker with professional English — experienced building interfaces and workflows for multilingual MENA audiences.",
-  },
-  {
-    title: "Performance Engineering",
-    description:
-      "Reduced load times up to 40%, optimized API responses, lazy-loaded components, and improved dashboard responsiveness under traffic.",
-  },
-  {
-    title: "Agile & Cross-Functional",
-    description:
-      "Sprint planning, retrospectives, and direct collaboration with product owners in fast-paced startup and enterprise environments.",
+      "Close collaboration with product owners and stakeholders in Agile ceremonies to ensure scalable, maintainable, business-aligned deliveries.",
   },
 ];
 
 export const industries = [
-  "GCC & MENA AdTech",
   "Education & EdTech",
-  "Artificial Intelligence / SaaS",
-  "Travel & E-Commerce",
-  "Fintech-Ready Platforms",
+  "Digital Agency & E-Commerce",
+  "Digital Health",
+  "Enterprise Backend Services",
+  "ERP/CRM Systems",
 ];
 
 export const expertise = [
   {
-    title: "Web Applications",
+    title: "ERP/CRM Platforms",
     description:
-      "SPAs, admin dashboards, and multi-role platforms with JWT auth, RBAC, and real-time data — Angular 19, React, Next.js.",
-    icon: "WEB",
+      "Large-scale student lifecycle management, admissions, scheduling, and multi-role dashboards — Angular + Spring Boot.",
+    icon: "ERP",
   },
   {
-    title: "API & Back-End",
+    title: "Spring Boot APIs",
     description:
-      "RESTful APIs with Node.js, Express, Flask, and .NET — campaign analytics, student records, AI recommendation engines.",
+      "RESTful APIs with clean architecture, JWT authentication, RBAC, and Spring Data JPA for enterprise data persistence.",
     icon: "API",
   },
   {
-    title: "UI/UX Engineering",
+    title: "Angular Dashboards",
     description:
-      "PrimeNG 19, MUI, Tailwind — responsive layouts, booking flows, campaign tools, and mobile-first GCC product design.",
+      "PrimeNG data tables, interactive charts, and responsive admin interfaces for complex operational data visualization.",
     icon: "UI",
   },
   {
-    title: "AI Integration",
+    title: "Authentication & RBAC",
     description:
-      "OpenAI API for personalized recommendations, profile analysis, and intelligent event matching — shipped in production.",
-    icon: "AI",
+      "Secure authentication systems with fine-grained role-based access control and strict data isolation across user roles.",
+    icon: "AUTH",
   },
   {
-    title: "DevOps & Cloud",
+    title: "CI/CD & DevOps",
     description:
-      "Docker containerization, Vercel deployments, Git/GitLab CI workflows, and cloud-ready application architecture.",
+      "Jenkins, GitHub Actions, Git workflows, and deployment pipelines ensuring code quality and reliable releases.",
     icon: "OPS",
   },
   {
-    title: "Mentorship",
+    title: "Full-Stack Delivery",
     description:
-      "MERN stack instruction at GOMYCODE — capstone mentoring, code reviews, and curriculum for industry-ready developers.",
-    icon: "EDU",
+      "End-to-end ownership from requirements to production — backend services, frontend SPAs, databases, and deployment.",
+    icon: "FULL",
   },
 ];
 
 export const stats = [
-  { value: "6+", label: "Years in Development" },
-  { value: "20mo", label: "GCC Experience in Dubai" },
-  { value: "10K+", label: "Events / Month Handled" },
+  { value: "4+", label: "Years in Development" },
+  { value: "30K+", label: "Students on Platform" },
+  { value: "500+", label: "Instructors Managed" },
   { value: "3", label: "Languages Spoken" },
 ];
 
 export const skills = {
   frontend: [
+    "Angular",
+    "PrimeNG",
     "TypeScript",
-    "React",
-    "Angular 19",
-    "Next.js",
     "JavaScript",
+    "React",
+    "Next.js",
     "HTML5",
     "CSS3",
     "SASS/SCSS",
     "Tailwind CSS",
-    "PrimeNG 19",
-    "Material UI",
-    "Responsive & Mobile-First",
-    "RTL-Ready Layouts",
+    "RxJS",
+    "Responsive Design",
   ],
   backend: [
+    "Java",
+    "Spring Boot",
     "Node.js",
     "Express",
-    "Flask",
-    "Python",
-    ".NET / C#",
-    "REST APIs",
-    "GraphQL-ready",
-    "OpenAI API",
+    "RESTful APIs",
     "JWT Authentication",
-    "Micro-services",
+    "RBAC",
+    "Python",
+    "Laravel",
   ],
-  databases: ["MongoDB", "MySQL", "PostgreSQL-ready", "Mongoose", "Redis-ready"],
+  databases: [
+    "MySQL",
+    "PostgreSQL",
+    "MongoDB",
+    "Spring Data JPA",
+    "Hibernate",
+  ],
   devops: [
-    "Docker",
-    "Vercel",
-    "Git / GitHub / GitLab",
-    "CI/CD Workflows",
+    "Git",
+    "GitHub Actions",
+    "Jenkins",
+    "CI/CD",
     "Postman",
+    "Jira",
+    "Slack",
     "Agile / Scrum",
-    "UML",
-  ],
-  legacy: [
-    "PHP",
-    "Symfony",
-    "WordPress",
-    "Prestashop",
-    "jQuery",
   ],
 };
 
@@ -241,168 +241,112 @@ export type Experience = {
 export const experiences: Experience[] = [
   {
     company: "Elite Conseil",
-    role: "Full-Stack Developer",
-    period: "04/2025 – Present",
+    role: "Full-Stack Developer (Java / Angular)",
+    period: "09/2024 – Present",
     location: "Tunis, Tunisia",
     industry: "Education",
     employmentType: "Full-time",
     description:
-      "Education group managing multiple schools and campuses. Building digital platforms for students, trainers, prospects, and applications — unifying academic and administrative workflows.",
+      "Partnered with a multi-campus education group serving 30,000+ students and 500+ instructors. Designed and evolved a large-scale ERP/CRM platform centralizing student lifecycle management, admissions, scheduling, and instructor allocation.",
     metrics: [
-      "Multi-campus platform serving 5+ school entities",
-      "Role-based dashboards for 4 user types",
-      "Angular 19 + PrimeNG 19 production modules",
+      "30,000+ students on platform",
+      "500+ instructors managed",
+      "Multi-campus ERP/CRM delivery",
     ],
     highlights: [
-      "Designed internal micro-services for student records, trainer assignments, and multi-campus application workflows.",
-      "Built secure JWT authentication and role-based dashboards for enrollment, scheduling, and admin oversight.",
-      "Implemented PrimeNG 19 data tables, forms, and interactive modules with consistent UX across campuses.",
-      "Collaborated with product owners in Agile sprints to deliver scalable, maintainable features.",
+      "Developed robust backend services using Java Spring Boot with clean architecture and scalable REST APIs.",
+      "Built secure authentication and authorization with fine-grained RBAC and strict data isolation.",
+      "Created interactive Angular dashboards transforming complex operational data into actionable insights.",
+      "Collaborated with product owners and stakeholders in Agile ceremonies for business-aligned deliveries.",
     ],
     technologies: [
-      "Angular 19",
-      "Node.js",
+      "Angular",
       "TypeScript",
-      "PrimeNG 19",
-      "SASS",
+      "PrimeNG",
       "Tailwind CSS",
+      "SASS/SCSS",
+      "Java Spring Boot",
+      "CI/CD",
     ],
   },
   {
-    company: "Memorality",
+    company: "111CoThink",
     role: "Full-Stack Developer",
-    period: "10/2024 – 01/2025",
+    period: "10/2023 – 08/2024",
     location: "Tunis, Tunisia",
-    industry: "AI / SaaS",
+    industry: "Digital Agency",
     employmentType: "Full-time",
     description:
-      "AI startup building smart event management with personalized recommendations powered by OpenAI profile analysis.",
+      "Digital agency managing coworking platforms and e-commerce solutions. Developed chatbot interfaces, SEO-optimized websites, and managed multiple projects across the full development lifecycle.",
     metrics: [
-      "Full-stack AI platform from scratch",
-      "OpenAI API integrated in production",
-      "MongoDB data models for 3 core entities",
+      "Chatbot for automated customer support",
+      "SEO-optimized responsive websites",
+      "Multi-project parallel delivery",
     ],
     highlights: [
-      "Developed event management platform where AI analyzes user profiles for tailored event suggestions.",
-      "Integrated OpenAI APIs to improve recommendation accuracy and user engagement.",
-      "Built Flask REST services with Next.js front-end optimized for growing traffic.",
-      "Designed MongoDB schemas for users, events, and recommendation history.",
+      "Developed and deployed a chatbot interface to improve automated customer support and user engagement.",
+      "Built and maintained SEO-optimized, responsive websites increasing client visibility and lead generation.",
+      "Worked across multiple projects simultaneously, handling full lifecycle from requirements to deployment.",
+      "Applied CI/CD best practices to streamline deployments and ensure code quality.",
     ],
     technologies: [
       "Next.js",
-      "Flask",
       "TypeScript",
       "OpenAI API",
-      "MongoDB",
+      "MySQL",
       "Tailwind CSS",
+      "Git",
     ],
   },
   {
-    company: "Wantotrip",
-    role: "Full-Stack Developer",
-    period: "05/2024 – 09/2024",
+    company: "Lion-Touch",
+    role: "Full-Stack Developer Intern",
+    period: "02/2023 – 06/2023",
     location: "Tunis, Tunisia",
-    industry: "Travel & Tourism",
+    industry: "Digital Health",
+    employmentType: "Internship",
+    description:
+      "Startup developing digital health solutions. Developed core modules for a diet and nutrition management web application with dedicated interfaces for nutritionists.",
+    metrics: [
+      "Diet & nutrition management platform",
+      "Nutritionist appointment scheduling",
+      "Health data dashboards",
+    ],
+    highlights: [
+      "Implemented backend business logic for caloric calculations, macronutrient distribution, and nutritional tracking.",
+      "Built Angular dashboards presenting health data in a clear and actionable format.",
+      "Created a dedicated interface for nutritionists — appointment scheduling, client monitoring, and progress tracking.",
+      "Applied clean separation between frontend and backend for maintainability and scalability.",
+    ],
+    technologies: ["Angular", "Laravel", "PrimeNG", "Tailwind CSS"],
+  },
+  {
+    company: "Digital Hub",
+    role: "Backend Developer – Java",
+    period: "01/2022 – 01/2023",
+    location: "Tunis, Tunisia",
+    industry: "Enterprise",
     employmentType: "Full-time",
     description:
-      "Online travel agency for curated group trips — led UI/UX overhaul of the booking platform across desktop and mobile.",
+      "Developed and maintained backend services using Java and Spring Boot for internal and client-facing applications with RESTful API design.",
     metrics: [
-      "Full booking flow redesign",
-      "Cross-platform responsive delivery",
-      "Improved engagement & retention metrics",
+      "RESTful API design & implementation",
+      "Spring Data JPA data persistence",
+      "Code reviews & performance optimization",
     ],
     highlights: [
-      "Redesigned booking platform UI/UX for smoother trip browsing and reservations.",
-      "Integrated with .NET back-end APIs for desktop and mobile viewports.",
-      "Built interactive filters, trip cards, and multi-step booking components.",
-      "Refactored legacy Angular modules for faster page loads and maintainability.",
+      "Designed and implemented RESTful APIs ensuring performance, security, and scalability.",
+      "Worked with relational databases using Spring Data JPA for efficient data persistence and querying.",
+      "Participated in code reviews and collaborated with frontend developers for smooth API integration.",
+      "Contributed to debugging, performance optimization, and technical documentation.",
     ],
-    technologies: ["Angular", "TypeScript", "MUI", ".NET", "SASS"],
-  },
-  {
-    company: "ArabyAds",
-    role: "Full-Stack Developer",
-    period: "07/2022 – 03/2024",
-    location: "Dubai, United Arab Emirates",
-    industry: "AdTech / GCC",
-    employmentType: "Full-time",
-    description:
-      "Full-Stack Developer on a Dubai-based AdTech platform for the GCC & MENA — connecting influencers with brands for campaign creation, monitoring, and performance reporting at scale.",
-    metrics: [
-      "10K+ campaign events processed monthly",
-      "~40% reduction in dashboard load times",
-      "React dashboards for GCC clients & influencers",
-      "20 months in Dubai's AdTech ecosystem",
+    technologies: [
+      "Java",
+      "Spring Boot",
+      "Spring Data JPA",
+      "MySQL",
+      "Git",
     ],
-    highlights: [
-      "Full-stack ownership: React front-end, Node.js/.NET APIs, and reporting modules end to end.",
-      "Built React dashboards for GCC clients and influencers to create, monitor, and optimize ad campaigns.",
-      "Developed Node.js and .NET services for campaign data ingestion and performance analytics.",
-      "Improved system reliability across reporting modules handling thousands of monthly events.",
-      "Redesigned UI flows — cutting load times ~40% and boosting client satisfaction.",
-      "Shipped features on aggressive release cycles in Dubai's fast-paced startup environment.",
-    ],
-    technologies: ["React", "Node.js", ".NET", "JavaScript", "SASS", "SCSS"],
-  },
-  {
-    company: "GOMYCODE",
-    role: "Full Stack JS Instructor",
-    period: "02/2022 – 07/2022",
-    location: "Tunis, Tunisia",
-    industry: "EdTech",
-    employmentType: "Instructor",
-    description:
-      "EdTech platform preparing students for the tech industry through hands-on MERN stack training.",
-    metrics: [
-      "Mentored 30+ students per cohort",
-      "Capstone projects deployed to production",
-      "MERN curriculum design & delivery",
-    ],
-    highlights: [
-      "Delivered MERN stack instruction with live coding and code reviews.",
-      "Mentored client-based capstone projects from requirements to deployment.",
-      "Developed course materials aligned with industry hiring standards.",
-    ],
-    technologies: ["React", "Node.js", "MongoDB", "Express", "TypeScript"],
-  },
-  {
-    company: "Freelance",
-    role: "Web Developer & Project Manager",
-    period: "12/2021 – 03/2022",
-    location: "Remote",
-    industry: "E-Commerce",
-    employmentType: "Freelance",
-    description:
-      "End-to-end WordPress and Prestashop projects for international clients.",
-    metrics: [
-      "5+ client projects delivered on time",
-      "Full lifecycle: scope → QA → launch",
-    ],
-    highlights: [
-      "Led project lifecycle from discovery through launch and client support.",
-      "Customized Prestashop themes with jQuery, Ajax, and MySQL.",
-    ],
-    technologies: ["WordPress", "Prestashop", "jQuery", "MySQL"],
-  },
-  {
-    company: "IT Open Sprite (ITOS)",
-    role: "Web Developer",
-    period: "11/2019 – 11/2021",
-    location: "Tunis, Tunisia",
-    industry: "Enterprise Web",
-    employmentType: "Full-time",
-    description:
-      "Enterprise web applications for customer data management, process automation, and front-end interaction simplification.",
-    metrics: [
-      "2 years enterprise PHP/JavaScript delivery",
-      "Unit & integration test coverage",
-    ],
-    highlights: [
-      "Facilitated secure access to customer reference data across business units.",
-      "Developed features in Symfony, CodeIgniter, WordPress, and Prestashop.",
-      "Conducted unit and integration testing for application reliability.",
-    ],
-    technologies: ["PHP", "Symfony", "JavaScript", "MySQL", "jQuery"],
   },
 ];
 
@@ -415,29 +359,14 @@ export type Education = {
 };
 
 export const education: Education[] = [
-  // {
-  //   institution: "GOMYCODE",
-  //   degree: "Professional Training — Full-Stack Development (MERN Stack)",
-  //   period: "09/2021 – 02/2022",
-  //   location: "Tunis, Tunisia",
-  //   focus:
-  //     "MongoDB, Express.js, React.js, Node.js — intensive bootcamp with production project delivery.",
-  // },
   {
-    institution: "Université Internationale de Tunis (UIT)",
-    degree: "Master's in Information Systems Engineering (ISE)",
-    period: "2015 – 2017",
-    location: "Tunis, Tunisia",
+    institution:
+      "Higher Institute of Technological Studies of Zaghouan (ISET)",
+    degree: "Bachelor's Degree in Computer Systems Development (DSI)",
+    period: "2020 – 2023",
+    location: "Zaghouan, Tunisia",
     focus:
-      "Software architecture, enterprise systems, and project management.",
-  },
-  {
-    institution: "ISET Kasserine",
-    degree: "Licence in Computer Systems Development (DSI)",
-    period: "2011 – 2014",
-    location: "Kasserine, Tunisia",
-    focus:
-      "Programming, databases, web development, and software engineering.",
+      "Programming, databases, web development, and software engineering fundamentals.",
   },
 ];
 
@@ -445,95 +374,40 @@ export const softSkills = [
   {
     title: "Teamwork",
     description:
-      "Cross-functional Agile teams — developers, designers, product owners, and stakeholders in GCC and MENA environments.",
+      "Effective collaboration in cross-functional team environments with developers, designers, and stakeholders.",
   },
   {
     title: "Problem Solving",
     description:
-      "Architecture decisions, production debugging, and pragmatic solutions under tight startup deadlines.",
+      "Developing creative and efficient solutions to complex technical challenges across the full stack.",
   },
   {
     title: "Communication",
     description:
-      "Technical writing, sprint demos, and client-facing discussions in Arabic, English, and French.",
-  },
-  {
-    title: "Adaptability",
-    description:
-      "PHP legacy to Angular 19, .NET integrations, OpenAI APIs — fast learner across stacks and domains.",
+      "Clear and concise communication with both technical and non-technical stakeholders.",
   },
 ];
 
 export const languages = [
   { name: "Arabic", level: "Native", proficiency: 100 },
-  { name: "English", level: "Professional Working Proficiency", proficiency: 85 },
-  { name: "French", level: "Professional Working Proficiency", proficiency: 80 },
+  {
+    name: "English",
+    level: "Professional Working Proficiency",
+    proficiency: 85,
+  },
+  { name: "French", level: "Intermediate", proficiency: 60 },
 ];
 
 export const pinnedRepos = [
   {
-    name: "carzone-crawler-docker",
-    description: "Dockerized TypeScript data crawler — production-ready containerized pipeline",
-    url: "https://github.com/Samer-Smati/carzone-crawler-docker",
+    name: "rayen-andolsi",
+    description:
+      "GitHub profile — open-source projects and development work",
+    url: "https://github.com/rayen-andolsi",
     language: "TypeScript",
-    stars: "Latest · 2025",
-  },
-  {
-    name: "blog-collaboratif",
-    description: "Multi-author collaborative blog with SCSS design system",
-    url: "https://github.com/Samer-Smati/blog-collaboratif",
-    language: "SCSS",
-    stars: "2025",
-  },
-  {
-    name: "backend-evaluation",
-    description: "C# .NET back-end evaluation system with REST API architecture",
-    url: "https://github.com/Samer-Smati/backend-evaluation",
-    language: "C#",
-    stars: "2024",
-  },
-  {
-    name: "Auth-front-back",
-    description: "Full-stack JWT authentication — React + Node.js/Express",
-    url: "https://github.com/Samer-Smati/Auth-front-back",
-    language: "JavaScript",
-    stars: "Capstone",
-  },
-  {
-    name: "my-erp-gomycode",
-    description: "MERN ERP capstone — inventory, users, and business modules",
-    url: "https://github.com/Samer-Smati/my-erp-gomycode",
-    language: "JavaScript",
-    stars: "Capstone",
+    stars: "Profile",
   },
 ];
-
-export const gitlabActivity = {
-  summary:
-    "Most of my recent production work lives on GitLab — full-stack Angular and Node.js apps with daily commits, feature branches, and code review. Enterprise projects are private; open learning repos and capstones are listed below.",
-  stats: [
-    {
-      value: "Daily",
-      label: "Production commits",
-      detail: "Feature branches & merge requests on GitLab",
-    },
-    {
-      value: "20+",
-      label: "GitLab projects",
-      detail: "Capstones, checkpoints & professional repos",
-    },
-    {
-      value: "Angular",
-      label: "& Node.js stack",
-      detail: "Enterprise dashboards, APIs & modules",
-    },
-    {
-      value: "2022+",
-      label: "Active since",
-      detail: "Consistent contribution graph on GitLab",
-    },
-  ],
-};
 
 export const navLinks = [
   { href: "#about", label: "About" },
@@ -541,6 +415,26 @@ export const navLinks = [
   { href: "#projects", label: "Projects" },
   { href: "#experience", label: "Experience" },
   { href: "#skills", label: "Skills" },
-  { href: "#gitlab", label: "GitLab" },
+  { href: "#github", label: "GitHub" },
   { href: "#contact", label: "Contact" },
+];
+
+export const codeProfiles = [
+  {
+    platform: "GitHub",
+    username: "rayen-andolsi",
+    url: "https://github.com/rayen-andolsi",
+    stats: "Open-source projects",
+    description:
+      "Source code, experiments, and portfolio projects on GitHub",
+    primary: true,
+  },
+  {
+    platform: "LinkedIn",
+    username: "Rayen Andolsi",
+    url: "https://www.linkedin.com/in/17rayen17",
+    stats: "Professional profile",
+    description:
+      "Professional profile — experience history, skills, and recommendations",
+  },
 ];

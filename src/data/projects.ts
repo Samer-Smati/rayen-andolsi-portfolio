@@ -18,147 +18,109 @@ export type FeaturedProject = {
 
 export const featuredProjects: FeaturedProject[] = [
   {
-    title: "ArabyAds — GCC Influencer Campaign Platform",
+    title: "Elite Conseil — ERP/CRM Education Platform",
     type: "Professional",
-    category: "AdTech · Dubai, UAE",
-    period: "2022 – 2024",
+    category: "EdTech · ERP/CRM",
+    period: "2024 – Present",
     featured: true,
     description:
-      "Full-Stack Developer at ArabyAds (Dubai) — built React dashboards, Node.js/.NET APIs, and reporting pipelines for GCC brands and influencers managing ad campaigns at scale.",
+      "Large-scale ERP/CRM platform for a multi-campus education group — centralizing student lifecycle management, admissions, scheduling, and instructor allocation across 30,000+ students.",
     metrics: [
-      "10K+ events/month",
-      "~40% faster loads",
-      "Full-stack role — React, Node.js, .NET across UI and APIs",
+      "30,000+ students",
+      "500+ instructors",
+      "Multi-campus delivery",
     ],
     highlights: [
-      "Full-stack delivery: React UI, Node.js/.NET back-end, and database-backed reporting",
-      "React dashboards for GCC campaign creation, monitoring & optimization",
-      "Node.js + .NET services for MENA market analytics and data ingestion",
-      "Performance optimizations under high-traffic startup conditions",
+      "Java Spring Boot backend with clean architecture and scalable REST APIs",
+      "Secure RBAC authentication with fine-grained role-based access control",
+      "Interactive Angular dashboards with PrimeNG for operational insights",
+      "Agile delivery with product owners and cross-functional stakeholders",
     ],
-    technologies: ["React", "Node.js", ".NET", "JavaScript", "SASS"],
-    links: [{ label: "Request case study", url: "#contact" }],
-  },
-  {
-    title: "Elite Conseil — Education Management Platform",
-    type: "Professional",
-    category: "EdTech",
-    period: "2025 – Present",
-    featured: true,
-    description:
-      "Multi-campus education ecosystem — student records, trainer assignments, applications, and admin dashboards across 5+ school entities.",
-    metrics: [
-      "5+ campuses",
-      "4 user roles",
-      "Angular 19 production",
+    technologies: [
+      "Java Spring Boot",
+      "Angular",
+      "PrimeNG",
+      "TypeScript",
+      "Tailwind CSS",
+      "CI/CD",
     ],
-    highlights: [
-      "JWT auth & role-based dashboards for academic workflows",
-      "PrimeNG 19 data tables, forms, and campus modules",
-      "Node.js micro-services for enrollment & scheduling",
-    ],
-    technologies: ["Angular 19", "Node.js", "TypeScript", "PrimeNG 19", "Tailwind"],
     links: [{ label: "Request demo", url: "#contact" }],
   },
   {
-    title: "Memorality — AI Event Recommendation Engine",
+    title: "111CoThink — Chatbot & Web Solutions",
     type: "Professional",
-    category: "AI / SaaS",
-    period: "2024 – 2025",
+    category: "Digital Agency",
+    period: "2023 – 2024",
     featured: true,
     description:
-      "AI-powered event platform analyzing user profiles via OpenAI to deliver personalized event suggestions and boost engagement.",
+      "Chatbot interface for automated customer support and SEO-optimized responsive websites for coworking platforms and e-commerce clients.",
     metrics: [
-      "OpenAI in production",
-      "Full-stack delivery",
-      "3 MongoDB entities",
+      "AI-powered chatbot",
+      "SEO-optimized sites",
+      "Multi-project delivery",
     ],
     highlights: [
-      "OpenAI API for profile-based recommendation engine",
-      "Next.js + Flask architecture for scalable traffic",
-      "MongoDB schemas for users, events & recommendations",
+      "Developed chatbot interface improving automated customer support",
+      "Built SEO-optimized responsive websites for client visibility",
+      "Full development lifecycle from requirements to deployment",
+      "CI/CD best practices for streamlined deployments",
     ],
-    technologies: ["Next.js", "Flask", "OpenAI API", "MongoDB", "TypeScript"],
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "OpenAI API",
+      "MySQL",
+      "Tailwind CSS",
+    ],
     links: [{ label: "Request demo", url: "#contact" }],
   },
   {
-    title: "Wantotrip — Travel Booking Platform",
+    title: "Lion-Touch — Nutrition Management App",
     type: "Professional",
-    category: "Travel · E-Commerce",
-    period: "2024",
+    category: "Digital Health",
+    period: "2023",
     description:
-      "Complete UI/UX overhaul of a travel booking platform — trip browsing, filters, and multi-step reservations across devices.",
-    metrics: ["Full booking redesign", "Mobile + desktop", "MUI theming"],
-    highlights: [
-      "Redesigned navigation and reservation journey",
-      ".NET API integration for booking flows",
-      "Legacy Angular refactor for performance",
+      "Diet and nutrition management web application with health data dashboards and a dedicated nutritionist interface for appointment scheduling and client monitoring.",
+    metrics: [
+      "Nutrition tracking",
+      "Nutritionist portal",
+      "Health dashboards",
     ],
-    technologies: ["Angular", "TypeScript", "MUI", ".NET", "SASS"],
+    highlights: [
+      "Backend logic for caloric calculations and macronutrient distribution",
+      "Angular dashboards presenting health data in actionable format",
+      "Nutritionist interface for scheduling, monitoring, and progress tracking",
+      "Clean frontend/backend separation for maintainability",
+    ],
+    technologies: ["Angular", "Laravel", "PrimeNG", "Tailwind CSS"],
     links: [{ label: "Request demo", url: "#contact" }],
   },
   {
-    title: "Carzone Crawler",
-    type: "Open Source",
-    category: "Docker · Automation",
-    period: "2025",
+    title: "Digital Hub — Backend Services",
+    type: "Professional",
+    category: "Enterprise · Java",
+    period: "2022 – 2023",
     description:
-      "Production-ready Dockerized TypeScript crawler — containerized data extraction with reproducible deployments.",
-    metrics: ["Docker", "TypeScript", "CI-ready"],
+      "Backend services using Java Spring Boot for internal and client-facing applications — RESTful API design, data persistence, and performance optimization.",
+    metrics: [
+      "RESTful API design",
+      "Spring Data JPA",
+      "Code review participation",
+    ],
     highlights: [
-      "Containerized pipeline with Docker",
-      "Structured TypeScript architecture",
-      "Scalable scraping workflow design",
+      "Designed RESTful APIs ensuring performance, security, and scalability",
+      "Spring Data JPA for efficient relational database persistence",
+      "Collaborated with frontend developers for smooth API integration",
+      "Debugging, performance optimization, and technical documentation",
     ],
-    technologies: ["TypeScript", "Docker", "Node.js"],
-    links: [
-      {
-        label: "View on GitHub",
-        url: "https://github.com/Samer-Smati/carzone-crawler-docker",
-      },
+    technologies: [
+      "Java",
+      "Spring Boot",
+      "Spring Data JPA",
+      "MySQL",
+      "Git",
     ],
-  },
-  {
-    title: "Collaborative Blog Platform",
-    type: "Open Source",
-    category: "CMS / Web",
-    period: "2025",
-    description:
-      "Multi-author blogging platform with SCSS design system and Strapi CMS integration.",
-    metrics: ["Multi-author", "Strapi CMS", "SCSS system"],
-    highlights: [
-      "Collaborative content creation workflow",
-      "Responsive SCSS design system",
-      "Strapi cloud template integration",
-    ],
-    technologies: ["SCSS", "JavaScript", "Strapi"],
-    links: [
-      {
-        label: "GitHub",
-        url: "https://github.com/Samer-Smati/blog-collaboratif",
-      },
-    ],
-  },
-  {
-    title: "Backend Evaluation System",
-    type: "Open Source",
-    category: "Enterprise · .NET",
-    period: "2024",
-    description:
-      "C# .NET back-end evaluation system — structured REST API design for enterprise assessment workflows.",
-    metrics: [".NET REST API", "C# architecture", "2024"],
-    highlights: [
-      "Enterprise-grade .NET back-end",
-      "Evaluation workflow data processing",
-      "Clean API layer design",
-    ],
-    technologies: ["C#", ".NET", "REST APIs"],
-    links: [
-      {
-        label: "GitHub",
-        url: "https://github.com/Samer-Smati/backend-evaluation",
-      },
-    ],
+    links: [{ label: "Request demo", url: "#contact" }],
   },
   {
     title: "This Portfolio — Live on Vercel",
@@ -166,86 +128,31 @@ export const featuredProjects: FeaturedProject[] = [
     category: "Next.js · Personal Brand",
     period: "2026",
     description:
-      "This site — Next.js 16, Framer Motion animations, Resend contact API, Zod validation, deployed on Vercel with SEO and performance optimization.",
+      "This site — Next.js 16, Framer Motion animations, Resend contact API, Zod validation, deployed on Vercel with SEO optimization.",
     metrics: ["Live deployed", "Contact API", "SEO ready"],
     highlights: [
       "Next.js App Router + TypeScript",
       "Framer Motion scroll animations",
       "Serverless contact form with Resend",
     ],
-    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "Vercel"],
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Framer Motion",
+      "Vercel",
+    ],
     links: [
       {
         label: "Live Site",
-        url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://portf-nine-eta.vercel.app",
+        url:
+          process.env.NEXT_PUBLIC_SITE_URL ??
+          "https://rayen-andolsi-portfolio.vercel.app",
       },
       {
         label: "GitHub",
-        url: "https://github.com/Samer-Smati/portf",
+        url: "https://github.com/Samer-Smati/rayen-andolsi-portfolio",
       },
     ],
-  },
-];
-
-export const gitlabPublicProjects = [
-  {
-    name: "ERP Capstone — GOMYCODE",
-    type: "Capstone",
-    description:
-      "Full-stack ERP system — inventory, users, and business modules built with the MERN stack.",
-    stack: "React · Node.js · MongoDB · Express",
-    url: "https://gitlab.com/Smati_Samer",
-  },
-  {
-    name: "React / Node Checkpoints",
-    type: "Learning",
-    description:
-      "Structured GitLab checkpoints covering React components, Node APIs, and full-stack patterns.",
-    stack: "React · Node.js · TypeScript",
-    url: "https://gitlab.com/Smati_Samer",
-  },
-  {
-    name: "Professional Angular & Node",
-    type: "Production",
-    description:
-      "Enterprise web apps — Angular dashboards, REST APIs, and feature delivery via GitLab CI/CD (private repos).",
-    stack: "Angular · Node.js · GitLab CI",
-    url: "https://gitlab.com/Smati_Samer",
-  },
-  {
-    name: "All GitLab repositories",
-    type: "Profile",
-    description:
-      "Browse my full GitLab profile — 20+ projects including capstones, checkpoints, and active professional work.",
-    stack: "gitlab.com/Smati_Samer",
-    url: "https://gitlab.com/Smati_Samer",
-  },
-];
-
-export const codeProfiles = [
-  {
-    platform: "GitLab",
-    username: "Smati_Samer",
-    url: "https://gitlab.com/Smati_Samer",
-    stats: "Daily commits · 20+ projects",
-    description:
-      "Primary platform for production Angular & Node.js work — feature branches, merge requests, and enterprise delivery",
-    primary: true,
-  },
-  {
-    platform: "GitHub",
-    username: "Samer-Smati",
-    url: "https://github.com/Samer-Smati",
-    stats: "60+ repositories · 7 followers",
-    description:
-      "Open-source experiments — Docker, .NET backends, MERN capstones, and portfolio source code",
-  },
-  {
-    platform: "LinkedIn",
-    username: "Samer Smati",
-    url: "https://www.linkedin.com/in/samer-smati",
-    stats: "Professional profile",
-    description:
-      "Professional profile — experience history, projects, and recommendations",
   },
 ];

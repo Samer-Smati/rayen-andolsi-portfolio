@@ -1,7 +1,6 @@
 "use client";
 
-import { personalInfo } from "@/data/cv";
-import { codeProfiles } from "@/data/projects";
+import { personalInfo, codeProfiles } from "@/data/cv";
 import { contactSchema, type ContactFormData } from "@/lib/validations";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { SectionHeading } from "@/components/ui/SectionHeading";
@@ -15,6 +14,7 @@ export function Contact() {
     "idle",
   );
   const [errorMessage, setErrorMessage] = useState("");
+  const encodedName = encodeURIComponent(personalInfo.name);
 
   const {
     register,
@@ -64,13 +64,13 @@ export function Contact() {
         <div className="grid gap-10 lg:grid-cols-2">
           <ScrollReveal>
             <div className="space-y-6">
-              <div className="rounded-2xl border border-violet-500/20 bg-violet-500/5 p-6">
-                <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-violet-400">
+              <div className="rounded-2xl border border-indigo-500/20 bg-indigo-500/5 p-6">
+                <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-indigo-400">
                   Direct contact
                 </p>
                 <a
                   href={`tel:${personalInfo.phone.replace(/\s/g, "")}`}
-                  className="block text-2xl font-bold text-white transition-colors hover:text-violet-300"
+                  className="block text-2xl font-bold text-white transition-colors hover:text-indigo-300"
                 >
                   {personalInfo.phone}
                 </a>
@@ -83,7 +83,7 @@ export function Contact() {
                   WhatsApp →
                 </a>
                 <a
-                  href={`mailto:${personalInfo.email}?subject=Hello%20-%20Samer%20Smati`}
+                  href={`mailto:${personalInfo.email}?subject=Hello%20-%20${encodedName}`}
                   className="mt-1 block text-base text-zinc-400 transition-colors hover:text-white"
                 >
                   {personalInfo.email}
@@ -98,9 +98,9 @@ export function Contact() {
                   </p>
                 </div>
                 <div className="rounded-xl border border-white/10 bg-white/[0.02] p-4">
-                  <p className="text-xs text-zinc-500">GCC experience</p>
+                  <p className="text-xs text-zinc-500">Current focus</p>
                   <p className="mt-1 font-semibold text-white">
-                    Full-Stack Developer · ArabyAds, Dubai
+                    Java Spring Boot · Angular · ERP/CRM
                   </p>
                 </div>
               </div>
@@ -110,23 +110,15 @@ export function Contact() {
                   href={personalInfo.linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="rounded-full border border-white/10 bg-white/5 px-5 py-2.5 text-sm font-medium text-white transition-all hover:border-cyan-500/50"
+                  className="rounded-full border border-white/10 bg-white/5 px-5 py-2.5 text-sm font-medium text-white transition-all hover:border-emerald-500/50"
                 >
                   LinkedIn
-                </a>
-                <a
-                  href={personalInfo.gitlab}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="rounded-full border border-orange-500/30 bg-orange-500/10 px-5 py-2.5 text-sm font-medium text-orange-200 transition-all hover:border-orange-500/50"
-                >
-                  GitLab
                 </a>
                 <a
                   href={personalInfo.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="rounded-full border border-white/10 bg-white/5 px-5 py-2.5 text-sm font-medium text-white transition-all hover:border-violet-500/50"
+                  className="rounded-full border border-white/10 bg-white/5 px-5 py-2.5 text-sm font-medium text-white transition-all hover:border-indigo-500/50"
                 >
                   GitHub
                 </a>
@@ -149,7 +141,7 @@ export function Contact() {
 
               <div className="space-y-3">
                 <p className="text-sm font-semibold uppercase tracking-wider text-zinc-500">
-                  GitLab & profiles
+                  Profiles
                 </p>
                 {codeProfiles.map((profile) => (
                   <a
@@ -159,7 +151,7 @@ export function Contact() {
                     rel="noopener noreferrer"
                     className={`block rounded-xl border p-4 transition-colors ${
                       "primary" in profile && profile.primary
-                        ? "border-orange-500/25 bg-orange-500/5 hover:border-orange-500/40"
+                        ? "border-indigo-500/25 bg-indigo-500/5 hover:border-indigo-500/40"
                         : "border-white/10 bg-white/[0.02] hover:border-white/20"
                     }`}
                   >
@@ -190,7 +182,7 @@ export function Contact() {
                   id="name"
                   type="text"
                   {...register("name")}
-                  className="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-white outline-none transition-colors focus:border-violet-500/50"
+                  className="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-white outline-none transition-colors focus:border-indigo-500/50"
                   placeholder="Your name"
                 />
                 {errors.name ? (
@@ -205,7 +197,7 @@ export function Contact() {
                   id="email"
                   type="email"
                   {...register("email")}
-                  className="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-white outline-none transition-colors focus:border-violet-500/50"
+                  className="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-white outline-none transition-colors focus:border-indigo-500/50"
                   placeholder="you@company.com"
                 />
                 {errors.email ? (
@@ -220,7 +212,7 @@ export function Contact() {
                   id="message"
                   rows={5}
                   {...register("message")}
-                  className="w-full resize-none rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-white outline-none transition-colors focus:border-violet-500/50"
+                  className="w-full resize-none rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-white outline-none transition-colors focus:border-indigo-500/50"
                   placeholder="Tell me about the opportunity..."
                 />
                 {errors.message ? (
@@ -230,7 +222,7 @@ export function Contact() {
               <motion.button
                 type="submit"
                 disabled={status === "loading"}
-                className="w-full rounded-xl bg-gradient-to-r from-violet-500 to-cyan-500 py-3.5 text-sm font-semibold text-white transition-opacity disabled:opacity-60"
+                className="w-full rounded-xl bg-gradient-to-r from-indigo-500 to-emerald-500 py-3.5 text-sm font-semibold text-white transition-opacity disabled:opacity-60"
                 whileHover={{ scale: status === "loading" ? 1 : 1.02 }}
                 whileTap={{ scale: status === "loading" ? 1 : 0.98 }}
               >

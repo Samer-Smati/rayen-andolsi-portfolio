@@ -12,19 +12,19 @@ export function Expertise() {
         <SectionHeading
           label="Expertise"
           title="What I Deliver"
-          description="End-to-end product delivery — from Dubai AdTech dashboards to AI SaaS, with DevOps-ready deployments."
+          description="End-to-end enterprise delivery — Spring Boot APIs, Angular dashboards, RBAC, and CI/CD-ready deployments."
         />
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {expertise.map((item, index) => (
             <ScrollReveal key={item.title} delay={index * 0.08} className="h-full">
               <motion.div
-                className="group flex h-full flex-col rounded-2xl border border-white/10 bg-white/[0.03] p-6 transition-all hover:border-cyan-500/30 hover:bg-cyan-500/5"
+                className="group flex h-full flex-col rounded-2xl border border-white/10 bg-white/[0.03] p-6 transition-all hover:border-emerald-500/30 hover:bg-emerald-500/5"
                 whileHover={{ y: -4 }}
               >
-                <span className="mb-4 inline-flex w-fit rounded-lg border border-white/10 bg-white/5 px-2 py-1 font-mono text-xs font-bold text-cyan-400">
+                <span className="mb-4 inline-flex w-fit rounded-lg border border-white/10 bg-white/5 px-2 py-1 font-mono text-xs font-bold text-emerald-400">
                   {item.icon}
                 </span>
-                <h3 className="mb-2 text-lg font-bold text-white group-hover:text-cyan-300">
+                <h3 className="mb-2 text-lg font-bold text-white group-hover:text-emerald-300">
                   {item.title}
                 </h3>
                 <p className="text-sm leading-relaxed text-zinc-400">

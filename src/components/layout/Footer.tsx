@@ -5,20 +5,20 @@ export function Footer() {
   const phoneHref = `tel:${personalInfo.phone.replace(/\s/g, "")}`;
 
   return (
-    <footer className="border-t border-white/10 bg-[#08080c] px-6 py-10">
+    <footer className="border-t border-white/10 bg-[#080c10] px-6 py-10">
       <div className="mx-auto max-w-6xl">
         <div className="mb-8 flex flex-col items-center gap-4 text-center md:flex-row md:justify-between md:text-left">
           <div>
             <p className="text-lg font-bold text-white">{personalInfo.name}</p>
             <p className="text-sm text-zinc-500">
-              {personalInfo.title} · GCC & MENA experience
+              {personalInfo.title} · Java & Angular
             </p>
             <p className="mt-1 text-xs text-zinc-600">{personalInfo.portfolioUrl}</p>
           </div>
           <div className="flex flex-wrap justify-center gap-4 md:justify-end">
             <a
               href={phoneHref}
-              className="text-sm font-semibold text-violet-400 transition-colors hover:text-white"
+              className="text-sm font-semibold text-indigo-400 transition-colors hover:text-white"
             >
               {personalInfo.phone}
             </a>
@@ -50,14 +50,6 @@ export function Footer() {
               className="text-sm text-zinc-400 transition-colors hover:text-white"
             >
               GitHub
-            </a>
-            <a
-              href={personalInfo.gitlab}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-sm text-zinc-400 transition-colors hover:text-white"
-            >
-              GitLab
             </a>
             <a
               href={personalInfo.cvUrl}

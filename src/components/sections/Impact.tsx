@@ -11,13 +11,13 @@ export function Impact() {
         <SectionHeading
           label="Impact"
           title="Measurable Results"
-          description="Production scale, performance gains, and measurable delivery across AdTech, SaaS, and enterprise."
+          description="Enterprise scale, secure platforms, and measurable delivery across EdTech, health, and digital agency projects."
         />
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {impactMetrics.map((metric, index) => (
             <ScrollReveal key={metric.label} delay={index * 0.06} className="h-full">
-              <div className="flex h-full flex-col rounded-2xl border border-white/10 bg-gradient-to-br from-white/[0.04] to-transparent p-6 transition-colors hover:border-cyan-500/30">
-                <p className="bg-gradient-to-r from-violet-400 to-cyan-400 bg-clip-text text-4xl font-bold text-transparent">
+              <div className="flex h-full flex-col rounded-2xl border border-white/10 bg-gradient-to-br from-white/[0.04] to-transparent p-6 transition-colors hover:border-emerald-500/30">
+                <p className="bg-gradient-to-r from-indigo-400 to-emerald-400 bg-clip-text text-4xl font-bold text-transparent">
                   {metric.value}
                 </p>
                 <p className="mt-2 font-semibold text-white">{metric.label}</p>

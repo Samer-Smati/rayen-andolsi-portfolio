@@ -8,35 +8,34 @@ import { TechChip } from "@/components/ui/TechChip";
 const skillGroups = [
   {
     title: "Front-End",
-    description: "Modern UI frameworks, RTL-ready layouts, and component libraries",
+    description: "Angular, PrimeNG, TypeScript, and responsive UI development",
     items: skills.frontend,
-    accent: "violet",
+    accent: "indigo",
   },
   {
     title: "Back-End & APIs",
-    description: "Server-side logic, micro-services, and third-party integrations",
+    description: "Java Spring Boot, Node.js, REST APIs, and authentication",
     items: skills.backend,
-    accent: "cyan",
+    accent: "emerald",
   },
   {
     title: "Databases",
-    description: "Relational and document storage, production data modeling",
+    description: "Relational and document storage with ORM frameworks",
     items: skills.databases,
-    accent: "orange",
+    accent: "amber",
   },
   {
-    title: "DevOps & Cloud",
-    description: "Docker, Vercel, Git workflows — deployment-ready delivery",
+    title: "DevOps & Tools",
+    description: "CI/CD, Git workflows, and Agile delivery practices",
     items: skills.devops,
     accent: "emerald",
   },
 ];
 
 const accentBorder: Record<string, string> = {
-  violet: "hover:border-violet-500/30 hover:bg-violet-500/5",
-  cyan: "hover:border-cyan-500/30 hover:bg-cyan-500/5",
-  orange: "hover:border-orange-500/30 hover:bg-orange-500/5",
+  indigo: "hover:border-indigo-500/30 hover:bg-indigo-500/5",
   emerald: "hover:border-emerald-500/30 hover:bg-emerald-500/5",
+  amber: "hover:border-amber-500/30 hover:bg-amber-500/5",
 };
 
 export function Skills() {
@@ -46,7 +45,7 @@ export function Skills() {
         <SectionHeading
           label="Skills"
           title="Technical Arsenal"
-          description="React, Angular, Next.js, Node.js, .NET, Docker, and cloud-ready deployments."
+          description="Java, Spring Boot, Angular, PrimeNG, TypeScript, and CI/CD pipelines."
         />
         <div className="grid gap-6 md:grid-cols-2">
           {skillGroups.map((group, groupIndex) => (
