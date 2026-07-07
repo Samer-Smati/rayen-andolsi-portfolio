@@ -5,6 +5,7 @@ import { AnimatedText } from "@/components/ui/AnimatedText";
 import { GradientBlob } from "@/components/ui/GradientBlob";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 export function Hero() {
   const [subtitleIndex, setSubtitleIndex] = useState(0);
@@ -42,6 +43,12 @@ export function Hero() {
         <p className="mb-3 text-sm font-semibold uppercase tracking-[0.25em] text-indigo-400">
           {personalInfo.title}
         </p>
+
+        <Image src="/rayen-andolsi-pdp.jpeg"
+          width={500}
+          height={500}
+          alt="rayen"
+        />
 
         <h1 className="mb-4 font-[family-name:var(--font-space-grotesk)] text-4xl font-bold leading-[1.05] tracking-tight text-white sm:text-5xl md:text-6xl xl:text-7xl">
           <AnimatedText text={firstName} />
